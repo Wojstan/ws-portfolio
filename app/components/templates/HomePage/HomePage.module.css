@@ -1,9 +1,29 @@
-.about {
+.about,
+.education {
   background-color: #f5f5f5;
-  height: 97vh;
 }
 
-.about article {
+.education {
+  min-height: 80vh;
+}
+
+.about article,
+.project article,
+.education article {
   max-width: 62rem;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8rem;
+  margin-top: 4rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.tab {
+  font-size: 1.6rem;
+  color: #494544;
+  margin: 0rem 1rem;
 }
