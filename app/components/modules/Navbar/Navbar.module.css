@@ -1,0 +1,11 @@
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 14vh;
+}
+
+.list li {
+  margin: 0 2rem;
+}

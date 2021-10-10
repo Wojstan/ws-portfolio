@@ -1,5 +1,13 @@
 {
   "compilerOptions": {
+    "baseUrl": "app",
+    "paths": {
+      "@element/*": ["components/elements/*"],
+      "@layout/*": ["components/layouts/*"],
+      "@module/*": ["components/modules/*"],
+      "@template/*": ["components/templates/*"],
+      "@helpers/*": ["helpers/*"]
+    },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
