@@ -9,7 +9,8 @@
 
 .about article,
 .project article,
-.education article {
+.education article,
+.techstack article {
   max-width: 62rem;
   margin-left: auto;
   margin-right: auto;
@@ -26,4 +27,14 @@
   font-size: 1.6rem;
   color: #494544;
   margin: 0rem 1rem;
+}
+
+.grid {
+  margin: 0 auto 5rem auto;
+  max-width: 52rem;
+  display: grid;
+  grid-template-columns: 24rem 24rem;
+  grid-row: auto auto;
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
 }

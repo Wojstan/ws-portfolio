@@ -44,6 +44,19 @@ h3 {
   font-size: 2rem;
 }
 
+h6 {
+  color: var(--sub-color);
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-align: left;
+}
+
+small {
+  font-size: 1rem;
+  color: #b0b0b0;
+  font-weight: 300;
+}
+
 p,
 li {
   font-weight: 300;

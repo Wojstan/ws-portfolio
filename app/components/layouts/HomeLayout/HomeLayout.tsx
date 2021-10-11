@@ -1,3 +1,4 @@
+import Footer from "@module/Footer/Footer";
 import styles from "./HomeLayout.module.css";
 
 type Props = {
@@ -5,7 +6,10 @@ type Props = {
 };
 
 const HomeLayout = ({ children }: Props) => (
-  <div className={styles.layout}>{children}</div>
+  <div className={styles.layout}>
+    {children}
+    <Footer />
+  </div>
 );
 
 export default HomeLayout;
