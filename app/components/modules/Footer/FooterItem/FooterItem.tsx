@@ -1,3 +1,5 @@
+import styles from "./FooterItem.module.css";
+
 type Props = {
   icon: React.ReactNode;
   title: string;
@@ -5,8 +7,10 @@ type Props = {
 };
 
 const FooterItem = ({ icon, title, value }: Props) => (
-  <div>
-    <h2>{icon}</h2>
+  <div className={styles.item}>
+    <div className={styles.circle}>
+      <span className={styles.icon}>{icon}</span>
+    </div>
 
     <h6 style={{ textAlign: "center" }}>{title}</h6>
     <h5>{value}</h5>

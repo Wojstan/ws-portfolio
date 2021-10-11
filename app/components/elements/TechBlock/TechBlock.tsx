@@ -6,14 +6,9 @@ type Props = {
   value: number;
   tech: string;
   icon: string;
-  height?: number;
-} & typeof defaultProps;
-
-const defaultProps = {
-  height: 60,
 };
 
-const TechBlock = ({ value, tech, icon, height }: Props) => (
+const TechBlock = ({ value, tech, icon }: Props) => (
   <div className={styles.card}>
     <div>
       <h6>{tech}</h6>
@@ -24,10 +19,8 @@ const TechBlock = ({ value, tech, icon, height }: Props) => (
         <small>commercial experience</small>
       </p>
     </div>
-    <img height={height} src={icon} alt="" />
+    <img height={60} src={icon} alt="" />
   </div>
 );
-
-TechBlock.defaultProps = defaultProps;
 
 export default TechBlock;

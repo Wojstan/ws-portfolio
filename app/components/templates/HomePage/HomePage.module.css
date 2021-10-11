@@ -7,17 +7,6 @@
   min-height: 80vh;
 }
 
-.about article,
-.project article,
-.education article,
-.techstack article {
-  max-width: 62rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 8rem;
-  margin-top: 4rem;
-}
-
 .links {
   display: flex;
   justify-content: center;

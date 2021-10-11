@@ -24,7 +24,7 @@ const HomePage = () => {
   return (
     <>
       <header className={styles.about}>
-        <Navbar />
+        <Navbar expand />
         <img src={"/img/about/avatar.png"} alt="" />
         <article>
           <h1>Hi, I'm Wojtek</h1>
@@ -89,12 +89,7 @@ const HomePage = () => {
 
         <HomeSection title={"TECHSTACK"} about={about} style={styles.techstack}>
           <div className={styles.grid}>
-            <TechBlock
-              tech="React"
-              height={80}
-              value={7}
-              icon="/img/tech/react-icon.svg"
-            />
+            <TechBlock tech="React" value={7} icon="/img/tech/react-icon.svg" />
             <TechBlock tech="Next" value={3} icon="/img/tech/next-icon.svg" />
             <TechBlock tech="Git" value={9} icon="/img/tech/git-icon.svg" />
             <TechBlock
