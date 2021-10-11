@@ -1,11 +1,11 @@
 import Layout from "@layout/Layout";
-import HomePage from "@template/HomePage/HomePage";
+import ProjectPage from "@template/ProjectPage/ProjectPage";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <Layout padding>
-      <HomePage />
+    <Layout>
+      <ProjectPage />
     </Layout>
   );
 };

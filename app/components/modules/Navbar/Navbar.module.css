@@ -1,11 +1,25 @@
+.global,
 .list {
   list-style: none;
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  margin-bottom: 14vh;
 }
 
-.list li {
+.list {
+  margin-bottom: 8vh;
+}
+
+.global li {
+  font-size: 2rem;
+  color: #e9984f;
+}
+
+.global li:hover {
+  color: #898989 !important;
+}
+
+.list li,
+.global li {
   margin: 0 2rem;
 }

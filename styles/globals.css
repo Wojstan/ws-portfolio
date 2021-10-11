@@ -16,17 +16,12 @@
 
 body {
   text-align: center;
-}
-
-h1,
-h2,
-p,
-li {
   font-family: "Poppins", sans-serif;
 }
 
 h1,
-h2 {
+h2,
+h5 {
   color: var(--main-title-color);
 }
 
@@ -39,12 +34,33 @@ h1 {
 
 h2 {
   font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
 
 h3 {
   font-family: "Source Code Pro", monospace;
   color: var(--sub-color);
   font-size: 2rem;
+}
+
+h5 {
+  color: var(--main-title-color);
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+h6 {
+  color: var(--sub-color);
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-align: left;
+}
+
+small {
+  font-size: 1rem;
+  color: #b0b0b0;
+  font-weight: 300;
 }
 
 p,
@@ -57,6 +73,7 @@ li {
 a {
   color: unset;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
@@ -66,4 +83,42 @@ a:hover {
 section,
 header {
   padding: 1rem;
+}
+
+.bgPr1 {
+  background-image: url("../public/img/projects/hex1.png");
+}
+
+.bgPr2 {
+  background-image: url("../public/img/projects/hex2.png");
+}
+
+.bgPr3 {
+  background-image: url("../public/img/projects/hex3.png");
+}
+
+.bgPr4 {
+  background-image: url("../public/img/projects/hex4.png");
+}
+
+.bgPr5 {
+  background-image: url("../public/img/projects/hex5.png");
+}
+
+article {
+  max-width: 62rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8rem;
+  margin-top: 4rem;
+}
+
+button {
+  padding: 0.7rem;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  min-width: 12rem;
+  cursor: pointer;
+  margin-top: 3rem;
 }
