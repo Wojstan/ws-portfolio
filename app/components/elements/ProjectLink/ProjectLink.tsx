@@ -5,7 +5,6 @@ import styles from "./ProjectLink.module.css";
 type Props = {
   id: number;
   bgClass: string;
-  title: string;
 };
 
 const ProjectLink = ({ id, bgClass }: Props) => (

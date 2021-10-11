@@ -12,6 +12,8 @@ import { BookOutlined, BankOutlined } from "@ant-design/icons";
 const HomePage = () => {
   const [timelineTab, setTimelineTab] = useState<"exp" | "edu">("exp");
 
+  console.log(window);
+
   return (
     <>
       <header className={styles.about}>
@@ -35,13 +37,13 @@ const HomePage = () => {
             <Separator width="300px" />
           </article>
           <nav className={styles.links} style={{ marginTop: "-8rem" }}>
-            <ProjectLink title="I" bgClass="bgPr1" id={1} />
-            <ProjectLink title="II" bgClass="bgPr2" id={2} />
-            <ProjectLink title="III" bgClass="bgPr3" id={3} />
+            <ProjectLink bgClass="bgPr1" id={1} />
+            <ProjectLink bgClass="bgPr2" id={2} />
+            <ProjectLink bgClass="bgPr3" id={3} />
           </nav>
           <nav className={styles.links} style={{ marginTop: "-14rem" }}>
-            <ProjectLink title="I" bgClass="bgPr1" id={1} />
-            <ProjectLink title="II" bgClass="bgPr2" id={2} />
+            <ProjectLink bgClass="bgPr4" id={4} />
+            <ProjectLink bgClass="bgPr5" id={5} />
           </nav>
         </section>
 

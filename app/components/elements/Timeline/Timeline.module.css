@@ -16,7 +16,7 @@
 @keyframes drop {
   from {
     opacity: 0;
-    transform: translateY(-25%);
+    transform: translateY(-20%);
   }
   to {
     opacity: 1;
