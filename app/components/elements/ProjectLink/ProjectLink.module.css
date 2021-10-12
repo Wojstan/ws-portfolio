@@ -4,7 +4,7 @@
   transform: rotate(120deg);
   cursor: pointer;
   width: 220px;
-  height: 440px;
+  height: 270px;
   margin: 0 1vh 0 1vh;
 }
 
@@ -23,4 +23,21 @@
   visibility: visible;
   transform: rotate(-60deg);
   position: relative;
+}
+
+.square {
+  width: 46.5%;
+  margin: 1.75%;
+  display: inline-block;
+  padding-bottom: 46.5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .square {
+    width: 93%;
+    padding-bottom: 93%;
+  }
 }

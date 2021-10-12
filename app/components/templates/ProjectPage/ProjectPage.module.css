@@ -4,6 +4,7 @@
 
 .header h1 {
   font-size: 3.6rem;
+  margin-bottom: 1.5rem;
 }
 
 .video {
@@ -39,4 +40,16 @@
 }
 .techstack div {
   margin: 1rem;
+}
+
+@media screen and (max-width: 1292px) {
+  .techstack {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    text-align: center;
+  }
 }

@@ -7,3 +7,12 @@
   padding: 1.5rem;
   min-width: 23rem;
 }
+
+@media screen and (max-width: 576px) {
+  .card {
+    min-width: 26rem;
+  }
+  .card img {
+    height: 40px;
+  }
+}

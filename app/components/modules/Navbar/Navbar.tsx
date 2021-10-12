@@ -37,7 +37,7 @@ const Navbar = ({ expand }: Props) => (
     {expand ? (
       <>
         {globalMenu}
-        <ul className={styles.list}>
+        <ul className={`${styles.list} ${styles.home}`}>
           <li>
             <a href="">ABOUT</a>{" "}
           </li>

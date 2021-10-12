@@ -6,7 +6,7 @@ type Props = {
 };
 
 const HomeLayout = ({ children }: Props) => (
-  <div style={{ padding: "1.5rem" }}>
+  <div className={styles.layout}>
     {children}
     <Footer />
   </div>

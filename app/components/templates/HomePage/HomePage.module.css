@@ -10,12 +10,9 @@
 .links {
   display: flex;
   justify-content: center;
-}
-
-.tab {
-  font-size: 1.6rem;
-  color: #494544;
-  margin: 0rem 1rem;
+  align-items: center;
+  margin-top: -3rem;
+  margin-bottom: 7rem;
 }
 
 .grid {
@@ -26,4 +23,25 @@
   grid-row: auto auto;
   grid-column-gap: 4rem;
   grid-row-gap: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+  .grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .links {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .avatar {
+    height: 160px;
+  }
+  .education {
+    min-height: 100vh;
+  }
 }

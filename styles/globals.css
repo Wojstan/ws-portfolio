@@ -122,3 +122,38 @@ button {
   cursor: pointer;
   margin-top: 3rem;
 }
+
+@media screen and (max-width: 992px) {
+  article {
+    max-width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .bgPr1 {
+    background-image: url("../public/img/projects/square1.png");
+  }
+
+  .bgPr2 {
+    background-image: url("../public/img/projects/square2.png");
+  }
+
+  .bgPr4 {
+    background-image: url("../public/img/projects/square4.png");
+  }
+
+  .bgPr5 {
+    background-image: url("../public/img/projects/square5.png");
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 1.9rem;
+  }
+}

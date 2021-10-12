@@ -4,8 +4,6 @@ type Props = {
   width: string;
 };
 
-const Separator = ({ width }: Props) => (
-  <hr className={styles.separator} style={{ width }} />
-);
+const Separator = ({ width }: Props) => <hr className={styles.separator} />;
 
 export default Separator;

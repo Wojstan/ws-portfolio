@@ -19,3 +19,9 @@
 .item {
   margin: 4rem 3rem;
 }
+
+@media screen and (max-width: 992px) {
+  .item {
+    margin: 2rem 0;
+  }
+}

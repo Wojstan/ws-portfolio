@@ -1,4 +1,18 @@
 .separator {
   margin: 5rem auto;
   border-top: 1px solid #c4c4c4;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .separator {
+    margin: 4rem auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .separator {
+    margin: 3rem auto;
+    max-width: 100px;
+  }
 }

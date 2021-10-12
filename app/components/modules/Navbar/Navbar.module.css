@@ -23,3 +23,15 @@
 .global li {
   margin: 0 2rem;
 }
+
+@media screen and (max-width: 992px) {
+  .home {
+    display: none;
+  }
+  .global {
+    margin-bottom: 2rem;
+  }
+  .list {
+    margin-bottom: 3rem;
+  }
+}
