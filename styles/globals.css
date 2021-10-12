@@ -8,6 +8,10 @@
   --sub-color: #e9984f;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

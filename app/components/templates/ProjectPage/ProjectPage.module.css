@@ -46,10 +46,25 @@
   .techstack {
     flex-direction: column;
   }
+  .video {
+    height: 55vh;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .header {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video {
+    height: 45vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .video {
+    height: 35vh;
   }
 }

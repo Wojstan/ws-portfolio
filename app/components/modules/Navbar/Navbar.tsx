@@ -39,16 +39,16 @@ const Navbar = ({ expand }: Props) => (
         {globalMenu}
         <ul className={`${styles.list} ${styles.home}`}>
           <li>
-            <a href="">ABOUT</a>{" "}
+            <Link href="/#about">ABOUT</Link>
           </li>
           <li>
-            <a href="">PROJECTS</a>
+            <Link href="/#projects">PROJECTS</Link>
           </li>
           <li>
-            <a href="">EXPERIENCE & EDUCATION</a>
+            <Link href="/#experience">EXPERIENCE & EDUCATION</Link>
           </li>
           <li>
-            <a href="">TECHSTACK</a>
+            <Link href="/#techstack">TECHSTACK</Link>
           </li>
         </ul>
       </>

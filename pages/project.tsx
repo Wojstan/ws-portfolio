@@ -4,7 +4,7 @@ import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <Layout>
+    <Layout padding={false}>
       <ProjectPage />
     </Layout>
   );

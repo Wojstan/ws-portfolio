@@ -9,10 +9,11 @@ import { about } from "./text";
 import HomeSection from "@module/HomeSection/HomeSection";
 import TechBlock from "@element/TechBlock/TechBlock";
 import HomeTabs from "@module/HomeTabs/HomeTabs";
+import ScrollTop from "@element/ScrollTop/ScrollTop";
 
 const HomePage = () => (
   <>
-    <header className={styles.about}>
+    <header id="about" className={styles.about}>
       <Navbar expand />
       <img src={"/img/about/avatar.png"} className={styles.avatar} alt="" />
       <article>
@@ -25,7 +26,12 @@ const HomePage = () => (
       </article>
     </header>
     <main>
-      <HomeSection title={"PROJECTS"} about={about} style={styles.project}>
+      <HomeSection
+        id="projects"
+        title={"PROJECTS"}
+        about={about}
+        style={styles.project}
+      >
         <nav className={styles.links}>
           <ProjectLink bgClass="bgPr1" id={1} />
           <ProjectLink bgClass="bgPr2" id={2} />
@@ -36,6 +42,7 @@ const HomePage = () => (
       </HomeSection>
 
       <HomeSection
+        id="experience"
         title={"EXPERIENCE & EDUCATION"}
         about={about}
         style={styles.education}
@@ -43,7 +50,12 @@ const HomePage = () => (
         <HomeTabs />
       </HomeSection>
 
-      <HomeSection title={"TECHSTACK"} about={about} style={styles.techstack}>
+      <HomeSection
+        id="techstack"
+        title={"TECHSTACK"}
+        about={about}
+        style={styles.techstack}
+      >
         <div className={styles.grid}>
           <TechBlock tech="React" value={7} icon="/img/tech/react-icon.svg" />
           <TechBlock tech="Next" value={3} icon="/img/tech/next-icon.svg" />
@@ -52,6 +64,7 @@ const HomePage = () => (
         </div>
       </HomeSection>
     </main>
+    <ScrollTop />
   </>
 );
 

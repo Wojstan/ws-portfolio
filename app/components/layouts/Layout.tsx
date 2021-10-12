@@ -3,13 +3,14 @@ import styles from "./Layout.module.css";
 
 type Props = {
   children: React.ReactNode;
+  padding: boolean;
 };
 
-const HomeLayout = ({ children }: Props) => (
-  <div className={styles.layout}>
+const Layout = ({ children, padding }: Props) => (
+  <div className={padding ? styles.layout : styles.project}>
     {children}
     <Footer />
   </div>
 );
 
-export default HomeLayout;
+export default Layout;
