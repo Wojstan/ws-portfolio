@@ -1,0 +1,70 @@
+{
+  "about": {
+    "info": "I am constantly growing as a web developer. Backend or frontend? Preferably both! But my passion is definitely frontend. I work well in groups and always keep my code clean and simple. While working on projects, I always try to learn something new. I have almost one-year professional experience working with JavaScript, React, TypeScript, Git. I am also very familiar with the concept of the REST API. Privately, I love British football, Tarantino movies, Breaking Bad and Dire Straits :)"
+  },
+  "projects": {
+    "info": "In my spare time, I often start to code. Some of the effects are presented below :) I always try to learn something new in every project and use the most dynamically developing technologies. Click one of the links below to see more info.",
+    "links": [
+      {
+        "id": 1,
+        "href": "bgPr2"
+      },
+      {
+        "id": 2,
+        "href": "bgPr4"
+      },
+      {
+        "id": 3,
+        "href": "bgPr5"
+      }
+    ]
+  },
+  "qualification": {
+    "info": "From 2017 to 2021 I was a student at Warsaw Military University of Technology (Computer Science). Even before graduation, I took a full-time job at MDBootstrap. There I actively participate in the development of the UI KIT, by creating components and unit tests, releasing the new versions, and respond to customer problems on the forum (similar to Stack Overflow). For some time I also take part in creating projects for clients, not connected with the UI KIT. Currently, I combine work with part-time studies at Warsaw University of Technology (Computer Science).",
+    "experience": [
+      {
+        "title": "Web Developer",
+        "place": "MDBootstrap",
+        "period": "Jan 2021 - now"
+      }
+    ],
+    "education": [
+      {
+        "title": "IT - Bachelor's degree",
+        "place": "Military University of Technology",
+        "period": "Sep 2017 - Feb 2021"
+      },
+      {
+        "title": "IT - Master's degree",
+        "place": "Warsaw University of Technology",
+        "period": "Seb 2021 - now"
+      }
+    ]
+  },
+  "techstack": {
+    "info": "I experience technologies such as React, TypeScript, Git, Jest, HTML & CSS at work every day. I had also the opportunity to come across technologies like Next, Node and Wordpress.",
+    "moreInfo": "Privately, I had a chance to use Redux several times, both classic and Redux Toolkit, also using RTK Query. Recently I became very interested in Vue, but at the moment I know only the basics of this framework.",
+    "commercial": [
+      {
+        "name": "React",
+        "since": "2021-03-14",
+        "img": "/img/tech/react-icon.svg"
+      },
+      {
+        "name": "Next",
+        "since": "2021-08-22",
+        "img": "/img/tech/next-icon.svg"
+      },
+      {
+        "name": "TypeScript",
+        "since": "2021-03-14",
+        "img": "/img/tech/ts-icon.svg"
+      },
+      {
+        "name": "Git",
+        "since": "2021-01-10",
+        "img": "/img/tech/git-icon.svg"
+      }
+    ]
+  }
+}

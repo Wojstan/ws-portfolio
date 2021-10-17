@@ -5,7 +5,12 @@ import TimelineItem from "@element/Timeline/TimelineItem/TimelineItem";
 
 import styles from "./HomeTabs.module.css";
 
-const HomeTabs = () => {
+type Props = {
+  experience: Array<{ title: string; place: string; period: string }>;
+  education: Array<{ title: string; place: string; period: string }>;
+};
+
+const HomeTabs = ({ experience, education }: Props) => {
   const [timelineTab, setTimelineTab] = useState<"exp" | "edu">("exp");
 
   return (
@@ -19,27 +24,27 @@ const HomeTabs = () => {
 
       {timelineTab === "exp" ? (
         <Timeline key={Math.random()}>
-          <TimelineItem
-            even={false}
-            title="Web Developer"
-            place="MDBootstrap"
-            date="Jan 2021 - now"
-          />
+          {experience.map((position, i) => (
+            <TimelineItem
+              key={i}
+              even={i % 2 === 1}
+              title={position.title}
+              place={position.place}
+              date={position.period}
+            />
+          ))}
         </Timeline>
       ) : (
         <Timeline>
-          <TimelineItem
-            even={false}
-            title="IT - Bachelor's degree"
-            place="Military University of Technology"
-            date="Sep 2017 - Feb 2021"
-          />
-          <TimelineItem
-            even
-            title="IT - Master's degree"
-            place="Warsaw University of Technology"
-            date="Seb 2021 - now"
-          />
+          {education.map((position, i) => (
+            <TimelineItem
+              key={i}
+              even={i % 2 === 1}
+              title={position.title}
+              place={position.place}
+              date={position.period}
+            />
+          ))}
         </Timeline>
       )}
     </>

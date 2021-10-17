@@ -1,29 +1,29 @@
 import TechBlock from "@element/TechBlock/TechBlock";
 import Navbar from "@module/Navbar/Navbar";
-import { about } from "@template/HomePage/text";
+import { ProjectData } from "./project";
 
 import styles from "./ProjectPage.module.css";
 
-const ProjectPage = () => (
+const ProjectPage = ({ data }: ProjectData) => (
   <div>
     <header className={styles.header}>
       <Navbar expand={false} />
       <article>
-        <h1>Application presenting recipes</h1>
-        <p>{about}</p>
+        <h1>{data.title}</h1>
+        <p>{data.about}</p>
         <button className={styles.filled}>SEE ON GITHUB</button>
         <button className={styles.outlined}>LIVE DEMO</button>
       </article>
     </header>
 
     <section className={styles.video}>
-      <video loop muted autoPlay playsInline src={"/video/food.mp4"}></video>
+      <video loop muted autoPlay playsInline src={data.video}></video>
     </section>
 
     <section className={styles.techstack}>
-      <TechBlock tech="React" value={7} icon="/img/tech/react-icon.svg" />
-      <TechBlock tech="Next" value={3} icon="/img/tech/next-icon.svg" />
-      <TechBlock tech="Git" value={9} icon="/img/tech/git-icon.svg" />
+      {data.techstack.map((tech) => (
+        <TechBlock tech={tech.position} value={tech.name} icon={tech.img} />
+      ))}
     </section>
   </div>
 );

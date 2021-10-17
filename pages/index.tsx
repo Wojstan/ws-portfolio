@@ -1,11 +1,22 @@
+import { HomeData } from "@template/HomePage/home";
 import Layout from "@layout/Layout";
 import HomePage from "@template/HomePage/HomePage";
-import type { NextPage } from "next";
+import { getHomeData } from "services/api-services";
 
-const Home: NextPage = () => {
+export async function getStaticProps() {
+  const homeData = await getHomeData();
+
+  return {
+    props: {
+      data: homeData,
+    },
+  };
+}
+
+const Home = ({ data }: HomeData) => {
   return (
     <Layout padding>
-      <HomePage />
+      <HomePage data={data} />
     </Layout>
   );
 };

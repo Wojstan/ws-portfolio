@@ -4,7 +4,7 @@
 }
 
 .education {
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 .links {
@@ -23,6 +23,10 @@
   grid-row: auto auto;
   grid-column-gap: 4rem;
   grid-row-gap: 4rem;
+}
+
+.moreinfo {
+  margin-top: 8rem;
 }
 
 @media screen and (max-width: 992px) {

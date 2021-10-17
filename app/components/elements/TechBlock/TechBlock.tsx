@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 import styles from "./TechBlock.module.css";
 
 type Props = {
-  value: number;
+  value: number | string;
   tech: string;
   icon: string;
 };
@@ -13,7 +13,13 @@ const TechBlock = ({ value, tech, icon }: Props) => (
     <div>
       <h6>{tech}</h6>
       <h2 style={{ marginBottom: "1rem" }}>
-        <CountUp end={value} duration={1} /> months
+        {typeof value === "number" ? (
+          <>
+            <CountUp end={value} duration={1} /> months
+          </>
+        ) : (
+          <>{value}</>
+        )}
       </h2>
       <p style={{ textAlign: "left" }}>
         <small>commercial experience</small>
