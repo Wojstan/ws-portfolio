@@ -2,6 +2,7 @@ export type ProjectData = {
   data: {
     id: number;
     title: string;
+    ghLink: string;
     theme: string;
     about: string;
     video: string;

@@ -5,16 +5,12 @@ import { getProjectData } from "services/api-services";
 
 export async function getStaticPaths() {
   return {
-    paths: [
-      { params: { id: "1" } },
-      { params: { id: "2" } },
-      { params: { id: "3" } },
-    ],
+    paths: [],
     fallback: "blocking",
   };
 }
 
-export async function getStaticProps({ params }: any) {
+export async function getStaticProps({ params }: { params: { id: number } }) {
   const projectData = await getProjectData(params);
 
   return {

@@ -6,6 +6,7 @@
   font-size: 3rem;
   padding: 1.5rem;
   min-width: 23rem;
+  text-align: left;
 }
 
 @media screen and (max-width: 576px) {

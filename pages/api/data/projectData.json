@@ -2,9 +2,10 @@
   {
     "id": 1,
     "title": "The Chelsea Webapp",
-    "theme": "#003cbe",
+    "ghLink": "https://github.com/Wojstan/chelsea-webapp",
+    "theme": "#3178C6",
     "about": "The application was designed for Chelsea F.C. supporters. It gets the data from Football API, to present fixtures, Premier League table, and more. The application also uses a node API with Express and Mongoose, to connect with the MongoDB database where lineups and player ratings can be stored. The user can use the CRUD methods to modify the lineup or the ratings.",
-    "video": "/video/food.mp4",
+    "video": "/video/chelsea.mp4",
     "techstack": [
       {
         "name": "React",
@@ -12,9 +13,9 @@
         "img": "/img/tech/react-icon.svg"
       },
       {
-        "name": "Redux Toolkit (RTK Query)",
+        "name": "Redux Toolkit",
         "position": "Tech 2",
-        "img": "/img/tech/react-icon.svg"
+        "img": "/img/tech/redux-icon.svg"
       },
       {
         "name": "TypeScript",
@@ -24,21 +25,22 @@
       {
         "name": "Node",
         "position": "Tech 4",
-        "img": "/img/tech/react-icon.svg"
+        "img": "/img/tech/node-icon.svg"
       },
       {
         "name": "MongoDB",
         "position": "Tech 5",
-        "img": "/img/tech/react-icon.svg"
+        "img": "/img/tech/mongo-icon.svg"
       }
     ]
   },
   {
     "id": 2,
     "title": "The Cryptohouse",
+    "ghLink": "https://github.com/Wojstan/crypto-app",
     "theme": "#1890FF",
     "about": "The application was designed for Chelsea F.C. supporters. It gets the data from Football API, to present fixtures, Premier League table, and more. The application also uses a node API with Express and Mongoose, to connect with the MongoDB database where lineups and player ratings can be stored. The user can use the CRUD methods to modify the lineup or the ratings.",
-    "video": "/video/food.mp4",
+    "video": "/video/crypto.mp4",
     "techstack": [
       {
         "name": "React",
@@ -46,9 +48,9 @@
         "img": "/img/tech/react-icon.svg"
       },
       {
-        "name": "Redux Toolkit (RTK Query)",
+        "name": "Redux Toolkit",
         "position": "Tech 2",
-        "img": "/img/tech/react-icon.svg"
+        "img": "/img/tech/redux-icon.svg"
       },
       {
         "name": "TypeScript",
@@ -58,13 +60,14 @@
       {
         "name": "Chart.js",
         "position": "Tech 4",
-        "img": "/img/tech/react-icon.svg"
+        "img": "/img/tech/chartjs-icon.svg"
       }
     ]
   },
   {
     "id": 3,
-    "title": "The My Cocktails",
+    "title": "My Cocktails",
+    "ghLink": "",
     "theme": "#F79489",
     "about": "The application was designed for Chelsea F.C. supporters. It gets the data from Football API, to present fixtures, Premier League table, and more. The application also uses a node API with Express and Mongoose, to connect with the MongoDB database where lineups and player ratings can be stored. The user can use the CRUD methods to modify the lineup or the ratings.",
     "video": "/video/food.mp4",
@@ -77,7 +80,7 @@
       {
         "name": "TypeScript",
         "position": "Tech 2",
-        "img": "/img/tech/react-icon.svg"
+        "img": "/img/tech/ts-icon.svg"
       }
     ]
   }
