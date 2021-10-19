@@ -8,10 +8,6 @@
   --sub-color: #e9984f;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -130,8 +126,8 @@ button {
 @media screen and (max-width: 992px) {
   article {
     max-width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
   }
   .bgPr1 {
     background-image: url("../public/img/projects/square1.png");
@@ -152,7 +148,7 @@ button {
 
 @media screen and (max-width: 576px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
   h1 {
     font-size: 4rem;

@@ -3,7 +3,6 @@ import {
   GithubOutlined,
   LinkedinOutlined,
   BookOutlined,
-  HomeOutlined,
 } from "@ant-design/icons";
 
 import Link from "next/link";
@@ -11,9 +10,10 @@ import Link from "next/link";
 type Props = {
   expand: boolean;
   color?: string | undefined;
+  homeRef: { current: HTMLDivElement | null };
 };
 
-const Navbar = ({ expand, color }: Props) => {
+const Navbar = ({ expand, color, homeRef }: Props) => {
   const globalMenu = (
     <ul className={styles.global}>
       <li>
@@ -47,6 +47,14 @@ const Navbar = ({ expand, color }: Props) => {
     color && (e.target.style.color = "");
   };
 
+  const scrollTo = (selector: string) => {
+    const homeElement = homeRef.current;
+
+    const scrollElement = homeElement?.querySelector(selector);
+
+    scrollElement?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <nav>
       {expand ? (
@@ -54,16 +62,18 @@ const Navbar = ({ expand, color }: Props) => {
           {globalMenu}
           <ul className={`${styles.list} ${styles.home}`}>
             <li>
-              <Link href="/#about">ABOUT</Link>
+              <a onClick={() => scrollTo("#about")}>ABOUT</a>
             </li>
             <li>
-              <Link href="/#projects">PROJECTS</Link>
+              <a onClick={() => scrollTo("#projects")}>PROJECTS</a>
             </li>
             <li>
-              <Link href="/#experience">EXPERIENCE & EDUCATION</Link>
+              <a onClick={() => scrollTo("#experience")}>
+                EXPERIENCE & EDUCATION
+              </a>
             </li>
             <li>
-              <Link href="/#techstack">TECHSTACK</Link>
+              <a onClick={() => scrollTo("#techstack")}>TECHSTACK</a>
             </li>
           </ul>
         </>
