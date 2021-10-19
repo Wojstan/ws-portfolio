@@ -39,7 +39,7 @@
     "title": "The Cryptohouse",
     "ghLink": "https://github.com/Wojstan/crypto-app",
     "theme": "#1890FF",
-    "about": "The application was designed for Chelsea F.C. supporters. It gets the data from Football API, to present fixtures, Premier League table, and more. The application also uses a node API with Express and Mongoose, to connect with the MongoDB database where lineups and player ratings can be stored. The user can use the CRUD methods to modify the lineup or the ratings.",
+    "about": "The application was designed to monitor the values of cryptocurrencies. It works in conjunction with the Coinranking API. The application presents the current exchange rates and some important statistics. Data are also presented on charts, using the Chart.js library. Everything is managed involving Redux Toolkit (RTK Query), which controls the state of the application.",
     "video": "/video/crypto.mp4",
     "techstack": [
       {
