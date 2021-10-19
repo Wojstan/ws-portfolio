@@ -16,13 +16,8 @@
 }
 
 .grid {
-  margin: 0 auto 5rem auto;
-  max-width: 52rem;
-  display: grid;
-  grid-template-columns: 24rem 24rem;
-  grid-row: auto auto;
-  grid-column-gap: 4rem;
-  grid-row-gap: 4rem;
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 .moreinfo {
