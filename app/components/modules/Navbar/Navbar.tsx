@@ -10,7 +10,7 @@ import Link from "next/link";
 type Props = {
   expand: boolean;
   color?: string | undefined;
-  homeRef: { current: HTMLDivElement | null };
+  homeRef?: { current: HTMLDivElement | null };
 };
 
 const Navbar = ({ expand, color, homeRef }: Props) => {
@@ -48,7 +48,7 @@ const Navbar = ({ expand, color, homeRef }: Props) => {
   };
 
   const scrollTo = (selector: string) => {
-    const homeElement = homeRef.current;
+    const homeElement = homeRef?.current;
 
     const scrollElement = homeElement?.querySelector(selector);
 
