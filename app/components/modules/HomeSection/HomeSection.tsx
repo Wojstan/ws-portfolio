@@ -1,14 +1,15 @@
 import Separator from "@element/Separator/Separator";
 
 type Props = {
+  id: string;
   children: React.ReactNode;
   style: string;
   title: string;
   about: string;
 };
 
-const HomeSection = ({ children, style, title, about }: Props) => (
-  <section className={style}>
+const HomeSection = ({ id, children, style, title, about }: Props) => (
+  <section id={id} className={style}>
     <article>
       <h2>{title}</h2>
 

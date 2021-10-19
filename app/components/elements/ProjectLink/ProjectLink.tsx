@@ -25,7 +25,7 @@ const ProjectLink = ({ id, bgClass }: Props) => {
 
   if (isNormalView) {
     return (
-      <Link href={`/project?id=${id}`}>
+      <Link href={`/project/${id}`}>
         <div className={styles.hexagon}>
           <div className={styles.in1}>
             <div className={`${styles.in2} ${bgClass}`}></div>
@@ -35,7 +35,7 @@ const ProjectLink = ({ id, bgClass }: Props) => {
     );
   } else {
     return (
-      <Link href={`/project?id=${id}`}>
+      <Link href={`/project/${id}`}>
         <div className={`${styles.square} ${bgClass}`}></div>
       </Link>
     );

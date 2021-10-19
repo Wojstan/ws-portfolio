@@ -2,6 +2,10 @@
   padding: 1.5rem;
 }
 
+.project {
+  padding: 0;
+}
+
 @media screen and (max-width: 576px) {
   .layout {
     padding: 0;
