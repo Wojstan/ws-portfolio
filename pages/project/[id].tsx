@@ -10,8 +10,8 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params }: { params: { id: number } }) {
-  const projectData = await getProjectData(params);
+export async function getStaticProps({ params }: { params: { id: string } }) {
+  const projectData = await getProjectData(params.id);
 
   return {
     props: {

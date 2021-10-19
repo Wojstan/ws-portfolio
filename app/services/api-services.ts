@@ -1,17 +1,18 @@
-type Props = {
-  id: number;
-};
+const homeData = require("./data/homeData.json");
+const projectData = require("./data/projectData.json");
 
-export async function getHomeData() {
-  const response = await fetch(`${process.env.ROOT}/home`);
-  const data = await response.json();
-
-  return data;
+export function getHomeData() {
+  return homeData;
 }
 
-export async function getProjectData({ id }: Props) {
-  const response = await fetch(`${process.env.ROOT}/projects/${id}`);
-  const data = await response.json();
+export function getProjectData(id: string) {
+  const filtered = projectData.filter(
+    (project: any) => project.id === parseInt(id)
+  );
 
-  return data;
+  if (filtered.length > 0) {
+    return filtered[0];
+  } else {
+    return { message: `Project with id: ${id} not found.` };
+  }
 }
