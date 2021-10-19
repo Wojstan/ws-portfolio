@@ -34,11 +34,6 @@
   margin: 0 auto;
 }
 
-.techstack div {
-  margin: 1rem;
-  min-width: 20rem;
-}
-
 @media screen and (max-width: 1292px) {
   .techstack {
     flex-direction: column;
