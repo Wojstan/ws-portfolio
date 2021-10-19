@@ -34,13 +34,13 @@ const ScrollTop = () => {
   return (
     <>
       {isVisible && (
-        <Link href="/#about">
+        <a onClick={() => window.scroll({ top: 0, behavior: "smooth" })}>
           <aside
             className={`${styles.button} ${fadeOut ? styles.fadeout : ""}`}
           >
             <UpOutlined />
           </aside>
-        </Link>
+        </a>
       )}
     </>
   );

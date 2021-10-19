@@ -1,6 +1,7 @@
 import Layout from "@layout/Layout";
 import { ProjectData } from "@template/ProjectPage/project";
 import ProjectPage from "@template/ProjectPage/ProjectPage";
+import { useEffect } from "react";
 import { getProjectData } from "services/api-services";
 
 export async function getStaticPaths() {
