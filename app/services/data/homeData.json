@@ -33,13 +33,13 @@
       {
         "title": "IT - Master's degree",
         "place": "Warsaw University of Technology",
-        "period": "Seb 2021 - now"
+        "period": "Sep 2021 - now"
       }
     ]
   },
   "techstack": {
     "info": "I experience technologies such as React, TypeScript, Git, Jest, HTML & CSS at work every day. I had also the opportunity to come across technologies like Next, Node and Wordpress.",
-    "moreInfo": "Privately, I had a chance to use Redux several times, both classic and Redux Toolkit, also using RTK Query. Recently I became very interested in Vue, but at the moment I know only the basics of this framework.",
+    "moreInfo": "Privately, I had a chance to use Redux several times, both classic and Redux Toolkit, also using RTK Query. Recently I became very interested in Vue, but at the moment I know only the basics of this framework. ",
     "commercial": [
       {
         "name": "React",

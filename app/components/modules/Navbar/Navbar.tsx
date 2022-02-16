@@ -13,6 +13,10 @@ type Props = {
   homeRef?: { current: HTMLDivElement | null };
 };
 
+type MouseEvent = {
+  target: { style: { color: string } };
+};
+
 const Navbar = ({ expand, color, homeRef }: Props) => {
   const globalMenu = (
     <ul className={styles.global}>
@@ -27,23 +31,33 @@ const Navbar = ({ expand, color, homeRef }: Props) => {
         </a>
       </li>
       <li>
-        <a href="" title="LINKEDIN" style={color ? { color: color } : {}}>
+        <a
+          href="https://www.linkedin.com/in/wojciech-staniszewski-89ba34223"
+          target="_blank"
+          title="LINKEDIN"
+          style={color ? { color: color } : {}}
+        >
           <LinkedinOutlined />
         </a>
       </li>
       <li>
-        <a href="" title="CV" style={color ? { color: color } : {}}>
+        <a
+          href="/files/"
+          download="cv.pdf"
+          title="CV"
+          style={color ? { color: color } : {}}
+        >
           <BookOutlined />
         </a>
       </li>
     </ul>
   );
 
-  const onHover = (e: { target: { style: { color: string } } }) => {
+  const onHover = (e: MouseEvent) => {
     color && (e.target.style.color = color);
   };
 
-  const offHover = (e: { target: { style: { color: string } } }) => {
+  const offHover = (e: MouseEvent) => {
     color && (e.target.style.color = "");
   };
 

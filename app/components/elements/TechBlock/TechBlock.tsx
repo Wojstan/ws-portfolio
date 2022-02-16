@@ -10,7 +10,7 @@ type Props = {
 };
 
 const TechBlock = ({ value, tech, icon, color }: Props) => (
-  <div style={{ display: "inline-block" }}>
+  <div className={styles.tech}>
     <div className={styles.card}>
       <div>
         <h6 style={color ? { color: color } : {}}>{tech}</h6>
