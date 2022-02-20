@@ -1,10 +1,12 @@
 .separator {
-  margin: 5rem auto;
-  border-top: 1px solid #c4c4c4;
-  max-width: 300px;
+  margin: 4rem 0;
+  background-color: #e9984f;
+  max-width: 500px;
+  height: 4px;
+  border-radius: 4px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1240px) {
   .separator {
     margin: 4rem auto;
   }

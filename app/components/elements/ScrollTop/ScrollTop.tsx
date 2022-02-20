@@ -34,7 +34,10 @@ const ScrollTop = () => {
   return (
     <>
       {isVisible && (
-        <a onClick={() => window.scroll({ top: 0, behavior: "smooth" })}>
+        <a
+          className="scroller"
+          onClick={() => window.scroll({ top: 0, behavior: "smooth" })}
+        >
           <aside
             className={`${styles.button} ${fadeOut ? styles.fadeout : ""}`}
           >

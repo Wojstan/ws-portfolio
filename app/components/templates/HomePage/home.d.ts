@@ -1,17 +1,22 @@
+type Info = {
+  quote: string;
+  text: string;
+};
+
 export type HomeData = {
   data: {
     about: {
-      info: string;
+      info1: Array<Info>;
+      info2: Array<Info>;
     };
-    projects: { info: string; links: Array<{ id: number; href: string }> };
+    projects: { info: Array<Info>; links: Array<{ id: number; href: string }> };
     qualification: {
-      info: string;
+      info: Array<Info>;
       experience: Array<{ title: string; place: string; period: string }>;
       education: Array<{ title: string; place: string; period: string }>;
     };
     techstack: {
-      info: string;
-      moreInfo: string;
+      info: Array<Info>;
       commercial: Array<{
         name: string;
         since: string;

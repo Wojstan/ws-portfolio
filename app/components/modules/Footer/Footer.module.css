@@ -3,14 +3,44 @@
   padding: 1rem;
 }
 
+.footer ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer li {
+  margin-right: 4rem;
+}
+
 .contact {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@media screen and (max-width: 992px) {
-  .contact {
+.important a {
+  margin-left: 4rem;
+  font-weight: 700;
+  color: #e9984f;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1260px) {
+  .footer li {
+    margin: 2rem 2rem;
+  }
+  .important a {
+    margin: 2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .footer ul {
     flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .footer li {
+    margin: 0;
+    margin-bottom: 2rem;
   }
 }

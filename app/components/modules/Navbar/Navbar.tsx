@@ -18,41 +18,6 @@ type MouseEvent = {
 };
 
 const Navbar = ({ expand, color, homeRef }: Props) => {
-  const globalMenu = (
-    <ul className={styles.global}>
-      <li>
-        <a
-          href="https://github.com/Wojstan"
-          target="_blank"
-          title="GITHUB"
-          style={color ? { color: color } : {}}
-        >
-          <GithubOutlined />
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.linkedin.com/in/wojciech-staniszewski-89ba34223"
-          target="_blank"
-          title="LINKEDIN"
-          style={color ? { color: color } : {}}
-        >
-          <LinkedinOutlined />
-        </a>
-      </li>
-      <li>
-        <a
-          href="/files/"
-          download="cv.pdf"
-          title="CV"
-          style={color ? { color: color } : {}}
-        >
-          <BookOutlined />
-        </a>
-      </li>
-    </ul>
-  );
-
   const onHover = (e: MouseEvent) => {
     color && (e.target.style.color = color);
   };
@@ -73,27 +38,37 @@ const Navbar = ({ expand, color, homeRef }: Props) => {
     <nav>
       {expand ? (
         <>
-          {globalMenu}
           <ul className={`${styles.list} ${styles.home}`}>
             <li>
-              <a onClick={() => scrollTo("#about")}>ABOUT</a>
-            </li>
-            <li>
-              <a onClick={() => scrollTo("#projects")}>PROJECTS</a>
-            </li>
-            <li>
-              <a onClick={() => scrollTo("#experience")}>
-                EXPERIENCE & EDUCATION
+              <a className="li-animation" onClick={() => scrollTo("#about")}>
+                about
               </a>
             </li>
             <li>
-              <a onClick={() => scrollTo("#techstack")}>TECHSTACK</a>
+              <a className="li-animation" onClick={() => scrollTo("#projects")}>
+                projects
+              </a>
+            </li>
+            <li>
+              <a
+                className="li-animation"
+                onClick={() => scrollTo("#experience")}
+              >
+                experience & education
+              </a>
+            </li>
+            <li>
+              <a
+                className="li-animation"
+                onClick={() => scrollTo("#techstack")}
+              >
+                techstack
+              </a>
             </li>
           </ul>
         </>
       ) : (
         <>
-          {globalMenu}
           <ul className={styles.list}>
             <li>
               <Link href="/">

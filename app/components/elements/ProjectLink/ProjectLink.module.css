@@ -6,6 +6,7 @@
   width: 220px;
   height: 270px;
   margin: 0 1vh 0 1vh;
+  transition: transform 0.2s;
 }
 
 .in1 {
@@ -33,6 +34,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+}
+
+.hexagon:hover {
+  transform: scale(1.1) rotate(120deg);
 }
 
 @media screen and (max-width: 576px) {
