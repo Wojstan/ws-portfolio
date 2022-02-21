@@ -159,7 +159,7 @@ header {
 }
 
 section {
-  padding: 8rem 0;
+  padding: 8vh 0;
 }
 
 .bgPr1 {
@@ -263,9 +263,6 @@ button {
   p {
     margin-bottom: 4rem;
   }
-  section {
-    padding: 3rem 0;
-  }
 }
 
 @media screen and (max-width: 992px) {
@@ -307,10 +304,6 @@ button {
     font-size: 6rem;
     text-align: center;
     margin-bottom: 1.6rem;
-  }
-
-  section {
-    padding: 4rem 0;
   }
   h3 {
     font-size: 1.6rem;
