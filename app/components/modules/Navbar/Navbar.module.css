@@ -2,7 +2,6 @@
 .list {
   list-style: none;
   display: flex;
-  justify-content: center;
   margin-top: 2rem;
 }
 
@@ -21,7 +20,7 @@
 
 .list li,
 .global li {
-  margin: 0 2rem;
+  margin-right: 4rem;
 }
 
 @media screen and (max-width: 992px) {

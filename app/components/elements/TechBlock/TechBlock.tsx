@@ -10,20 +10,14 @@ type Props = {
 };
 
 const TechBlock = ({ value, tech, icon, color }: Props) => (
-  <div className={styles.tech}>
+  <div className={`${styles.tech} add-content`}>
     <div className={styles.card}>
       <div>
         <h6 style={color ? { color: color } : {}}>{tech}</h6>
-        <h2 style={{ marginBottom: "1rem" }}>
-          {typeof value === "number" ? (
-            <>
-              <CountUp end={value} duration={1} /> months
-            </>
-          ) : (
-            <>{value}</>
-          )}
-        </h2>
-        <p style={{ textAlign: "left" }}>
+        <h3 className={styles.time} style={{ marginBottom: "1rem" }}>
+          <span className="counter">{value}</span> months
+        </h3>
+        <p style={{ textAlign: "left", marginBottom: 0 }}>
           <small>commercial experience</small>
         </p>
       </div>

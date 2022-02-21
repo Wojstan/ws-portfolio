@@ -7,7 +7,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Portfolio</title>
+        <link rel="shortcut icon" href="/img/icon.png" />
+        <title>Wojciech Staniszewski &#x1F64C;</title>
       </Head>
       <Component {...pageProps} />
     </>

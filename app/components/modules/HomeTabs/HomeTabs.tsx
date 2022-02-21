@@ -14,11 +14,19 @@ const HomeTabs = ({ experience, education }: Props) => {
   const [timelineTab, setTimelineTab] = useState<"exp" | "edu">("exp");
 
   return (
-    <>
-      <a className={styles.tab} onClick={() => setTimelineTab("exp")}>
+    <div className="add-content" style={{ minHeight: "400px" }}>
+      <a
+        className={styles.tab}
+        style={{ color: timelineTab === "exp" ? "#e9984f" : "" }}
+        onClick={() => setTimelineTab("exp")}
+      >
         <BankOutlined /> Experience
       </a>
-      <a className={styles.tab} onClick={() => setTimelineTab("edu")}>
+      <a
+        className={styles.tab}
+        style={{ color: timelineTab === "edu" ? "#e9984f" : "" }}
+        onClick={() => setTimelineTab("edu")}
+      >
         <BookOutlined /> Education
       </a>
 
@@ -47,7 +55,7 @@ const HomeTabs = ({ experience, education }: Props) => {
           ))}
         </Timeline>
       )}
-    </>
+    </div>
   );
 };
 

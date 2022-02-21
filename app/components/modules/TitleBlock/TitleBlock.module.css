@@ -1,0 +1,14 @@
+.title {
+  overflow: hidden;
+}
+
+.title span {
+  display: inline-block;
+  transform: translateY(150%);
+}
+
+@media screen and (max-width: 576px) {
+  .avatar {
+    height: 160px;
+  }
+}
