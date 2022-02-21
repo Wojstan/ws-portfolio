@@ -4,7 +4,7 @@
     "title": "The Chelsea Webapp",
     "ghLink": "https://github.com/Wojstan/chelsea-webapp",
     "theme": "#3178C6",
-    "about": "The application was designed for Chelsea F.C. supporters. It gets the data from Football API, to present fixtures, Premier League table, and more. The application also uses a node API with Express and Mongoose, to connect with the MongoDB database where lineups and player ratings can be stored. The user can use the CRUD methods to modify the lineup or the ratings.",
+    "about": "The application was designed for Chelsea FC supporters. It fetches the data from Football API, to present fixtures, Premier League table, and more. User can next set the lineup, add ratings and match events.",
     "video": "/video/chelsea.mp4",
     "techstack": [
       {

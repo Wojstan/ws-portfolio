@@ -42,10 +42,14 @@ const HomeBlock = ({
 
     gsap.registerPlugin(ScrollTrigger);
 
+    const vw = Math.max(
+      document.documentElement.clientWidth || 0,
+      window.innerWidth || 0
+    );
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: wrapper,
-        start: "center bottom",
+        start: vw > 560 ? "center bottom" : "top bottom",
       },
     });
     imageHolder &&
@@ -62,19 +66,22 @@ const HomeBlock = ({
         { duration: 1, ease: "power2.in", yPercent: 0 },
         "img"
       );
-    tl.from(
-      line,
-      {
-        duration: 0.7,
-        scaleX: 0,
-        ease: "power2.in",
-        transformOrigin: "right center",
-      },
-      "img"
-    )
-      .to(title, { duration: 1, y: "0%" }, "-=0.5")
-      .to(subtitltes, { duration: 1, y: "0%", stagger: 0.2 }, "-=0.75")
-      .to(paragraphs, { duration: 1, y: "0%", stagger: 0.4 }, "-=1");
+    line &&
+      tl.from(
+        line,
+        {
+          duration: 0.7,
+          scaleX: 0,
+          ease: "power2.in",
+          transformOrigin: "right center",
+        },
+        "img"
+      );
+    title && tl.to(title, { duration: 1, y: "0%" }, "-=0.5");
+    subtitltes.length &&
+      tl.to(subtitltes, { duration: 1, y: "0%", stagger: 0.2 }, "-=0.75");
+    paragraphs.length &&
+      tl.to(paragraphs, { duration: 1, y: "0%", stagger: 0.4 }, "-=1");
 
     addContent.length && tl.from(addContent, addAnimation, "-=0.2");
   }, []);
