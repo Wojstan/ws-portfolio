@@ -104,6 +104,10 @@ p span {
   transform: translateY(-150%);
 }
 
+ul {
+  list-style: none;
+}
+
 li {
   color: var(--sub-text-color);
   letter-spacing: 3.5px;
@@ -202,6 +206,11 @@ button {
 .flex-between {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
   align-items: center;
 }
 

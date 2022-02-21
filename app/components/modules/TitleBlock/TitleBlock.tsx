@@ -40,7 +40,7 @@ const TitleBlock = ({ homeRef }: Props) => {
 
   return (
     <div className="container" ref={animationWrapper}>
-      <Navbar homeRef={homeRef} expand />
+      <Navbar homeRef={homeRef} />
 
       <h1 className={styles.title}>
         <span id="title">Hi, I'm Wojtek</span>

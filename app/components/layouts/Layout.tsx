@@ -3,13 +3,13 @@ import styles from "./Layout.module.css";
 
 type Props = {
   children: React.ReactNode;
-  padding: boolean;
+  footer?: boolean;
 };
 
-const Layout = ({ children, padding }: Props) => (
-  <div className={padding ? styles.layout : styles.project}>
+const Layout = ({ children, footer }: Props) => (
+  <div className={styles.layout}>
     {children}
-    <Footer />
+    {footer && <Footer />}
   </div>
 );
 

@@ -15,7 +15,7 @@ export function getStaticProps() {
 
 const Home = ({ data }: HomeData) => {
   return (
-    <Layout padding>
+    <Layout footer>
       <HomePage data={data} />
     </Layout>
   );
