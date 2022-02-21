@@ -24,12 +24,14 @@
 }
 
 .video {
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
   min-height: 96vh;
   overflow: hidden;
+  right: 5px;
 }
 
 .monitor {
@@ -54,13 +56,13 @@
 }
 
 .project article {
-  margin-bottom: 0;
+  margin-bottom: 12vh;
 }
 
 .links {
   position: absolute;
   bottom: 3%;
-  left: 70px;
+  left: 60px;
 }
 .links li {
   display: inline-block;
@@ -73,18 +75,6 @@
   font-weight: 600;
 }
 
-@media screen and (max-width: 1590px) {
-  .main h2 {
-    font-size: 2.4rem;
-  }
-  .main p {
-    font-size: 1.1rem;
-  }
-  .main h4 {
-    margin-top: 2rem;
-  }
-}
-
 @media screen and (max-width: 1260px) {
   .main {
     width: 100%;
@@ -95,10 +85,12 @@
   .main article {
     max-width: 100%;
     margin-top: 4rem;
+    margin-bottom: 0;
   }
   .video {
     width: 100%;
     min-height: 0vh;
+    position: static;
   }
   .links {
     position: static;
@@ -106,14 +98,5 @@
   }
   .links li {
     margin: 2rem;
-  }
-  .main h2 {
-    font-size: 3rem;
-  }
-  .main p {
-    font-size: 1.3rem;
-  }
-  .main h4 {
-    margin-top: 4rem;
   }
 }

@@ -18,6 +18,7 @@
 
 .image {
   overflow: hidden;
+  width: 35%;
 }
 
 .image img {
@@ -26,6 +27,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 1260px) {
+  .image {
+    overflow: hidden;
+    width: auto;
+  }
+}
 @media screen and (max-width: 992px) {
   .grid {
     display: flex;
