@@ -83,7 +83,7 @@ const ProjectPage = ({ data }: ProjectData) => {
           <h4>
             <span>QUICK DESCRIBE</span>
           </h4>
-          <p>
+          <p className={styles.about}>
             <span>{about}</span>
           </p>
 
