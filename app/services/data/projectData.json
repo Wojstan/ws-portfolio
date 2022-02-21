@@ -39,7 +39,7 @@
     "title": "The Cryptohouse",
     "ghLink": "https://github.com/Wojstan/crypto-app",
     "theme": "#1890FF",
-    "about": "The application was designed to monitor the values of cryptocurrencies. It works in conjunction with the Coinranking API. The application presents the current exchange rates and some important statistics. Data are also presented on charts, using the Chart.js library. Everything is managed involving Redux Toolkit (RTK Query), which controls the state of the application.",
+    "about": "The application was designed to monitor the values of cryptocurrencies. It works in conjunction with the Coinranking API. The application presents the current exchange rates and some important statistics. Data are also presented on charts, using the Chart.js library.",
     "video": "/video/crypto.mp4",
     "techstack": [
       {

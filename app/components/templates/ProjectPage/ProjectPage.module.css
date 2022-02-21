@@ -1,8 +1,12 @@
 .main {
-  padding: 5rem;
+  padding: 4rem;
   width: 50%;
   min-height: 96vh;
   position: relative;
+}
+
+.main h2 {
+  margin-bottom: 0rem;
 }
 
 .main p {
@@ -69,6 +73,18 @@
   font-weight: 600;
 }
 
+@media screen and (max-width: 1590px) {
+  .main h2 {
+    font-size: 2.4rem;
+  }
+  .main p {
+    font-size: 1.1rem;
+  }
+  .main h4 {
+    margin-top: 2rem;
+  }
+}
+
 @media screen and (max-width: 1260px) {
   .main {
     width: 100%;
@@ -90,5 +106,14 @@
   }
   .links li {
     margin: 2rem;
+  }
+  .main h2 {
+    font-size: 3rem;
+  }
+  .main p {
+    font-size: 1.3rem;
+  }
+  .main h4 {
+    margin-top: 4rem;
   }
 }
