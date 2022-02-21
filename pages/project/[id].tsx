@@ -23,7 +23,7 @@ export async function getStaticProps({ params }: { params: { id: string } }) {
 
 const Project = ({ data }: ProjectData) => {
   return (
-    <Layout padding={false}>
+    <Layout>
       <ProjectPage data={data} />
     </Layout>
   );
