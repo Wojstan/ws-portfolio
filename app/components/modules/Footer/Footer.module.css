@@ -20,9 +20,10 @@
 
 .important a {
   margin-left: 4rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #e9984f;
   font-size: 1.4rem;
+  letter-spacing: 3px;
 }
 
 @media screen and (max-width: 1260px) {

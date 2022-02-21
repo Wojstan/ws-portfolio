@@ -1,6 +1,12 @@
 .main {
   padding: 5rem;
   width: 50%;
+  min-height: 96vh;
+  position: relative;
+}
+
+.main p {
+  margin-bottom: 0rem;
 }
 
 .header {
@@ -14,17 +20,29 @@
 }
 
 .video {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 94vh;
   width: 50%;
+  min-height: 96vh;
+  overflow: hidden;
 }
 
-.video video {
+.monitor {
+  position: relative;
+  width: 80%;
+}
+
+.monitor img {
+  width: 100%;
+}
+
+.monitor video {
+  background: black;
+  width: 92.1%;
+  top: 4.5%;
+  left: 3.9%;
   position: absolute;
-  top: 18.4%;
 }
 
 .project {
@@ -36,10 +54,13 @@
 }
 
 .links {
-  margin-top: 5rem;
+  position: absolute;
+  bottom: 3%;
+  left: 70px;
 }
 .links li {
-  margin-top: 0.7rem;
+  display: inline-block;
+  margin: 1rem;
 }
 
 .seelinks {
@@ -48,29 +69,26 @@
   font-weight: 600;
 }
 
-@media screen and (max-width: 1292px) {
-  .techstack {
-    flex-direction: column;
-  }
-  .video {
-    height: 55vh;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .header {
+@media screen and (max-width: 1260px) {
+  .main {
+    width: 100%;
     text-align: center;
+    min-height: 0;
+    padding: 3rem;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .video {
-    height: 45vh;
+  .main article {
+    max-width: 100%;
+    margin-top: 4rem;
   }
-}
-
-@media screen and (max-width: 576px) {
   .video {
-    height: 35vh;
+    width: 100%;
+    min-height: 0vh;
+  }
+  .links {
+    position: static;
+    margin: 4rem 0;
+  }
+  .links li {
+    margin: 2rem;
   }
 }

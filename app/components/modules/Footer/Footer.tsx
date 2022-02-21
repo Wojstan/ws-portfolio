@@ -70,7 +70,7 @@ const Footer = () => {
         </ul>
         <div className={styles.important}>
           <a className="important" href="/files/" download="cv.pdf">
-            CV
+            CV (PDF)
           </a>
           <a className="important" href="mailto: wpstaniszewski@gmail.com">
             Contact me
@@ -82,30 +82,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-/*
-
-<div className={styles.contact}>
-      <FooterItem
-        icon={<PhoneFilled />}
-        title="Phone"
-        value="+48 723 643 871"
-      />
-      <FooterItem
-        icon={<MailFilled />}
-        title="Email"
-        value="wpstaniszewski@gmail.com"
-      />
-      <FooterItem
-        icon={<RocketFilled />}
-        title="Location"
-        value="Warsaw, Poland"
-      />
-    </div>
-
-    <p>
-      <small>
-        Copyright © 2021 Wojciech Staniszewski. All rights reserved.
-      </small>
-    </p>
-*/

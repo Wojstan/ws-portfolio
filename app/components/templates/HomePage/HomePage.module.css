@@ -38,10 +38,6 @@
   }
   .title {
     min-height: 96vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
 }
 
@@ -54,9 +50,5 @@
   }
   .title {
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
 }

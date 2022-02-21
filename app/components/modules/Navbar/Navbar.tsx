@@ -15,7 +15,7 @@ const Navbar = ({ homeRef }: Props) => {
 
   return (
     <nav>
-      <ul className={`${styles.list} ${styles.home}`}>
+      <ul className={styles.list}>
         <li>
           <a className="li-animation" onClick={() => scrollTo("#about")}>
             about
