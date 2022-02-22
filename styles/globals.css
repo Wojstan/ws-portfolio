@@ -32,7 +32,7 @@ h5 {
 
 h1 {
   font-weight: 700;
-  font-size: 10rem;
+  font-size: 12vh;
   margin-top: 22vh;
   margin-bottom: 0.5rem;
 }
@@ -53,7 +53,7 @@ h2 span {
 h3 {
   font-family: "Source Code Pro", monospace;
   color: var(--sub-color);
-  font-size: 4rem;
+  font-size: 5vh;
 }
 
 h4 {
@@ -240,16 +240,12 @@ button {
   article {
     max-width: 35rem;
   }
+  html {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 1260px) {
-  h1 {
-    margin-top: 16rem;
-    font-size: 7rem;
-  }
-  h3 {
-    font-size: 2.4rem;
-  }
   .flex-between {
     flex-direction: column;
     align-items: center;
