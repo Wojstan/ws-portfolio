@@ -13,7 +13,7 @@
     "info2": [
       {
         "quote": "MY EXPERIENCE?",
-        "text": "I have more than one-year professional experience working with JavaScript, React, TypeScript, Git. I am also very familiar with the concept of the REST API."
+        "text": "I have more than one-year professional experience working with JavaScript, React, TypeScript, Git. I am also familiar with the concept of the REST API."
       },
       {
         "quote": "PRIVATELY?",
@@ -25,7 +25,7 @@
     "info": [
       {
         "quote": "WHAT PROJECTS?",
-        "text": "A few projects I was developing during my free time. Each one was coded with the idea of learning something new. Click one of the buttons below to see more!"
+        "text": "A few projects I develop during my free time. Each one was coded with the idea of learning something new. Click one of the buttons below to see more!"
       }
     ],
     "links": [

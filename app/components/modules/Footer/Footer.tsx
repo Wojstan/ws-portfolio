@@ -69,7 +69,7 @@ const Footer = () => {
           </li>
         </ul>
         <div className={styles.important}>
-          <a className="important" href="/files/" download="cv.pdf">
+          <a className="important" href="/files/cv.pdf" download="cv.pdf">
             CV (PDF)
           </a>
           <a className="important" href="mailto: wpstaniszewski@gmail.com">
