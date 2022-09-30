@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+const nextConfig = {
   reactStrictMode: true,
-  env: {
-    ROOT:
-      process.env.NODE_ENV === "production"
-        ? "http://localhost:3000/api"
-        : `http://localhost:3000/api`,
-  },
-};
+  swcMinify: true,
+}
+
+module.exports = nextConfig

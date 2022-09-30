@@ -1,0 +1,41 @@
+.item {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 4rem;
+    text-align: left;
+  }
+  
+  .title {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
+  .subtitle,
+  .date {
+    font-size: 1.1rem;
+  }
+  
+  .subtitle {
+    color: rgb(99, 99, 99);
+  }
+  
+  .date {
+    margin-top: 1rem;
+    color: rgb(160, 160, 160);
+  }
+  
+  .round {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #e9984f;
+    border-radius: 50%;
+  }
+  
+  .line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #e9984f;
+    transform: translate(7px, -20px);
+  }

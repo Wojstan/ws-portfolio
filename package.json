@@ -10,13 +10,14 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
-    "gsap": "^3.9.1",
-    "next": "11.1.2",
+    "gsap": "^3.11.1",
+    "next": "12.3.1",
     "react": "17.0.2",
     "react-countup": "^6.0.0",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@types/node": "18.7.23",
     "@types/react": "17.0.27",
     "eslint": "^8.0.1",
     "eslint-config-next": "11.1.2",
