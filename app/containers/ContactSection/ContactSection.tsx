@@ -18,7 +18,7 @@ const ContactSection: FC<ContactProps> = ({ data }) => {
           <MailOutlined />
         </div>
         <p>Click the link below:</p>
-        <h3 className="pb-final">
+        <h3 style={{ paddingBottom: "10vh", fontSize: '2.6rem' }}>
           <a className="important" href="mailto: wpstaniszewski@gmail.com">
             <span ref={mailTextRef}></span>
             <span ref={cursorRef}>_</span>
@@ -29,11 +29,35 @@ const ContactSection: FC<ContactProps> = ({ data }) => {
       <footer className="bg-light flex-between">
         <div>WOJCIECH STANISZEWSKI &#169;</div>
         <ul>
-          <li>GITHUB</li>
+          <li>
+            <a
+              href="https://github.com/Wojstan"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GITHUB
+            </a>
+          </li>
           <li className="dot"></li>
-          <li>INSTAGRAM</li>
+          <li>
+            <a
+              href="https://github.com/Wojstan"
+              target="_blank"
+              rel="noreferrer"
+            >
+              INSTAGRAM
+            </a>
+          </li>
           <li className="dot"></li>
-          <li>LINKEDIN</li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/wojciech-staniszewski-89ba34223"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LINKEDIN
+            </a>
+          </li>
         </ul>
       </footer>
     </section>

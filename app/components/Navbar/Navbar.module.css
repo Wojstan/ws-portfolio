@@ -17,3 +17,8 @@
   padding-bottom: 0.5rem;
   letter-spacing: 5px;
 }
+
+.list li:hover {
+  border-bottom: 2px solid #e28c40;
+  transition: 0.2s ease-in;
+}
