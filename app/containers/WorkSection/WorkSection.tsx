@@ -5,104 +5,73 @@ import Timeline from "@components/Timeline/Timeline";
 import TimelineItem from "@components/Timeline/TimelineItem/TimelineItem";
 import StatBlock from "@components/StatBlock/StatBlock";
 import useAnimatedWork from "@hooks/useAnimatedWork";
+import Carousel from "@components/Carousel/Carousel";
+import { WorkType } from "@interfaces/HomeInterface";
+import BlockSection from "@components/BlockSection/BlockSection";
 
-const WorkSection: FC = () => {
-  const { tech1Ref, tech2Ref, tech3Ref, tech4Ref } = useAnimatedWork();
+type WorkProps = {
+  data: WorkType;
+};
+
+const WorkSection: FC<WorkProps> = ({ data }) => {
+  const { hexRef, techRefs, timelineRef, carouselRef } = useAnimatedWork();
+
+  const { experience, quotes, techstack, timeline } = data;
+
   return (
     <section id="work">
-      <div className="bg-light mb-1">
-        <article>
-          <h1>My work</h1>
-          <H4>PROFESSIONAL EXPERIENCE?</H4>
-
-          <p>
-            Even before graduation, I took a full-time job at MDBootstrap. There
-            I actively participate in the development of the React UI KIT, by
-            creating components and unit tests, releasing the new versions, and
-            respond to customer problems on the forum (similar to Stack
-            Overflow). For some time I also take part in creating projects for
-            clients, not connected with the UI KIT.
-          </p>
-        </article>
-
-        <div className="flex-center mt-4 pb-final">
+      <BlockSection
+        header="My work"
+        title={experience.title}
+        text={experience.text}
+        mb
+      >
+        <div ref={hexRef} className="flex-center mt-4 pb-final">
           <Hexagon width="208px" height="250px" bgClass="bgWork1" />
           <Hexagon width="208px" height="250px" bgClass="bgWork2" />
         </div>
-      </div>
+      </BlockSection>
 
-      <div className="bg-light mb-1">
-        <article>
-          <H4>About My work?</H4>
-          <p>
-            I use technologies such as React, TypeScript, Git, Jest, HTML &
-            CSS/SCSS at work every day. I had also the opportunity to come
-            across technologies like Next, Node and Wordpress.
-          </p>
-        </article>
-      </div>
+      <BlockSection title={quotes.title} text={quotes.text} mb>
+        <div
+          ref={carouselRef}
+          className="pb-final"
+          style={{ maxWidth: "1050px", margin: "auto" }}
+        >
+          <Carousel data={quotes.data} />
+        </div>
+      </BlockSection>
 
-      <div className="bg-light mb-1">
-        <article>
-          <H4>Timeline?</H4>
-          <p>
-            I had also the opportunity to come across technologies like Next,
-            Node and Wordpress.
-          </p>
-        </article>
-
-        <div className="pb-final">
-          <Timeline key={Math.random()}>
-            <TimelineItem
-              even={false}
-              title="Web Developer"
-              place="MDBootstrap"
-              date="Jan 2021 - now"
-            />
+      <BlockSection title={timeline.title} text={techstack.text} mb>
+        <div ref={timelineRef} className="pb-final">
+          <Timeline>
+            {timeline.data.map((item, i) => (
+              <TimelineItem
+                key={i}
+                even={false}
+                title={item.title}
+                place={item.place}
+                date={item.period}
+              />
+            ))}
           </Timeline>
         </div>
-      </div>
+      </BlockSection>
 
-      <div className="bg-light">
-        <article>
-          <H4>Techstack?</H4>
-          <p>
-            I use technologies such as React, TypeScript, Git, Jest, HTML &
-            CSS/SCSS at work every day.
-          </p>
-        </article>
-
+      <BlockSection title={techstack.title} text={techstack.text}>
         <div className="flex-center pb-final">
-          <StatBlock
-            ref={tech1Ref}
-            content={<img src="/img/work/react-icon.svg" alt="" />}
-            title="REACT"
-            describe="About my lorem ipsumers!"
-            orange={false}
-          />
-          <StatBlock
-            ref={tech2Ref}
-            content={<img src="/img/work/redux-icon.svg" alt="" />}
-            title="REDUX"
-            describe="Still young curious and waiting for challenges!"
-            orange={false}
-          />
-          <StatBlock
-            ref={tech3Ref}
-            content={<img src="/img/work/node-icon.svg" alt="" />}
-            title="NODE.JS"
-            describe="Essa perke to be sentar ses es!"
-            orange={false}
-          />
-          <StatBlock
-            ref={tech4Ref}
-            content={<img src="/img/work/ts-icon.svg" alt="" />}
-            title="TYPESCRIPT"
-            describe="Essa perke to be sentar ses es!"
-            orange={false}
-          />
+          {techstack.data.map((item, i) => (
+            <StatBlock
+              key={i}
+              ref={techRefs.at(i)}
+              content={<img src={item.img} alt="" />}
+              title={item.title}
+              describe={item.about}
+              orange={false}
+            />
+          ))}
         </div>
-      </div>
+      </BlockSection>
     </section>
   );
 };

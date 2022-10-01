@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 
@@ -76,10 +76,17 @@ p {
   margin: auto;
 }
 
+blockquote {
+  color: var(--sub-text-color);
+  font-style: italic;
+  font-size: 1.6rem;
+  line-height: 50px;
+  margin-bottom: 3rem;
+}
+
 section {
   margin: 2vh;
 }
-
 
 article h1 {
   margin-bottom: 4vh;
@@ -112,13 +119,12 @@ ul {
   list-style: none;
 }
 
-.mt-4{
+.mt-4 {
   margin-top: 1.5rem;
 }
 
 li {
   color: var(--sub-text-color);
-  letter-spacing: 5px;
   font-size: 1.2rem;
 }
 

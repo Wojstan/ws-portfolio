@@ -18,15 +18,17 @@ export function getStaticProps() {
 }
 
 const Home: NextPage<HomeInterface> = ({ data }) => {
+  const { title, about, work, education } = data;
+
   return (
     <div className="main-layout">
-      <TitleSection />
+      <TitleSection data={title} />
 
-      <AboutSection />
+      <AboutSection data={about} />
 
-      <WorkSection />
+      <WorkSection data={work} />
 
-      <EducationSection />
+      <EducationSection data={education} />
 
       <ContactSection />
     </div>

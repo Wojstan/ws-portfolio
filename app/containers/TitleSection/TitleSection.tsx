@@ -3,8 +3,13 @@ import { FC } from "react";
 import { ArrowDownOutlined } from "@ant-design/icons";
 import styles from "./TitleSection.module.css";
 import Navbar from "@components/Navbar/Navbar";
+import { TitleType } from "@interfaces/HomeInterface";
 
-const TitleSection: FC = () => {
+type TitleProps = {
+  data: TitleType;
+};
+
+const TitleSection: FC<TitleProps> = ({ data }) => {
   const { cursorRef, registerTextRef, aboutTextRef, arrowRef } =
     useAnimatedTitle();
 
@@ -24,11 +29,7 @@ const TitleSection: FC = () => {
         </h3>
 
         <article>
-          <p ref={aboutTextRef}>
-            Constantly growing as a web developer. Backend or frontend?
-            Preferably both! But my passion is definitely frontend. Start
-            scrolling to know me better!
-          </p>
+          <p ref={aboutTextRef}>{data.text}</p>
         </article>
 
         <ArrowDownOutlined className={styles.arrow} ref={arrowRef} />

@@ -34,7 +34,7 @@ const StatBlock: FC<StatBlockProps> = forwardRef<
     </div>
     <div className={styles.title}>{title}</div>
     {orange && <div className={styles.separator} />}
-    <div className={styles.describe}>
+    <div>
       <small>{describe}</small>
     </div>
   </div>

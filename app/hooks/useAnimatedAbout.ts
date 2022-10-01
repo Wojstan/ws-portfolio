@@ -57,7 +57,7 @@ const useAnimatedAbout = () => {
     const fadeOptions = {
       duration: 0.5,
       opacity: 0,
-      y: -50,
+      y: -80,
     };
 
     const tl1 = gsap.timeline({
@@ -80,9 +80,7 @@ const useAnimatedAbout = () => {
   }, [hex1Ref]);
 
   return {
-    stat1Ref,
-    stat2Ref,
-    stat3Ref,
+    statRefs: [stat1Ref, stat2Ref, stat3Ref],
     hex1Ref,
     hex2Ref,
   };
