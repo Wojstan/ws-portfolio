@@ -29,6 +29,15 @@ type TechItem = {
   title: string;
 };
 
+type HexItem = {
+  bgHex: string;
+  bgSquare: string;
+};
+
+type HexLinkItem = HexItem & {
+  link: string;
+};
+
 export type TitleType = Heading;
 
 export type AboutType = {
@@ -36,13 +45,13 @@ export type AboutType = {
     data: AboutStat[];
   };
   privately: Heading & {
-    data: any[];
+    data: HexItem[];
   };
 };
 
 export type WorkType = {
   experience: Heading & {
-    data: any[];
+    data: HexLinkItem[];
   };
   quotes: Heading & {
     data: QuoteItem[];
@@ -59,11 +68,14 @@ export type EducationType = Heading & {
   data: TimeItem[];
 };
 
+export type ContactType = Heading;
+
 export interface HomeInterface {
   data: {
     title: Heading;
     about: AboutType;
     work: WorkType;
     education: EducationType;
+    contact: ContactType;
   };
 }

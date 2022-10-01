@@ -18,7 +18,7 @@ export function getStaticProps() {
 }
 
 const Home: NextPage<HomeInterface> = ({ data }) => {
-  const { title, about, work, education } = data;
+  const { title, about, work, education, contact } = data;
 
   return (
     <div className="main-layout">
@@ -30,7 +30,7 @@ const Home: NextPage<HomeInterface> = ({ data }) => {
 
       <EducationSection data={education} />
 
-      <ContactSection />
+      <ContactSection data={contact} />
     </div>
   );
 };

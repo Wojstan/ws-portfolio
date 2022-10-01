@@ -1,5 +1,4 @@
 import BlockSection from "@components/BlockSection/BlockSection";
-import H4 from "@components/H4/H4";
 import Hexagon from "@components/Hexagon/Hexagon";
 import StatBlock from "@components/StatBlock/StatBlock";
 import useAnimatedAbout from "@hooks/useAnimatedAbout";
@@ -35,9 +34,18 @@ const AboutSection: FC<AboutProps> = ({ data }) => {
 
       <BlockSection title={privately.title} text={privately.text}>
         <div ref={hex1Ref} className="flex-center mt-4">
-          <Hexagon width="305px" height="360px" bgClass="bgAbout1" />
-          <Hexagon width="305px" height="360px" bgClass="bgAbout2" />
-          <Hexagon width="305px" height="360px" bgClass="bgAbout3" />
+          {privately.data.map(
+            (hex, i) =>
+              i < 3 && (
+                <Hexagon
+                  key={i}
+                  width="305px"
+                  height="360px"
+                  bgHex={hex.bgHex}
+                  bgSquare={hex.bgSquare}
+                />
+              )
+          )}
         </div>
 
         <div
@@ -45,8 +53,18 @@ const AboutSection: FC<AboutProps> = ({ data }) => {
           className="flex-center pb-final"
           style={{ marginTop: "-8rem" }}
         >
-          <Hexagon width="305px" height="360px" bgClass="bgAbout4" />
-          <Hexagon width="305px" height="360px" bgClass="bgAbout5" />
+          {privately.data.map(
+            (hex, i) =>
+              i > 2 && (
+                <Hexagon
+                  key={i}
+                  width="305px"
+                  height="360px"
+                  bgHex={hex.bgHex}
+                  bgSquare={hex.bgSquare}
+                />
+              )
+          )}
         </div>
       </BlockSection>
     </section>

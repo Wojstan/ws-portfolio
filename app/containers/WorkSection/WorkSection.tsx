@@ -27,8 +27,16 @@ const WorkSection: FC<WorkProps> = ({ data }) => {
         mb
       >
         <div ref={hexRef} className="flex-center mt-4 pb-final">
-          <Hexagon width="208px" height="250px" bgClass="bgWork1" />
-          <Hexagon width="208px" height="250px" bgClass="bgWork2" />
+          {experience.data.map((item, i) => (
+            <Hexagon
+              key={i}
+              width="208px"
+              height="250px"
+              bgHex={item.bgHex}
+              bgSquare={item.bgHex}
+              link={item.link}
+            />
+          ))}
         </div>
       </BlockSection>
 

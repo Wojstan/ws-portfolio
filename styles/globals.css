@@ -76,6 +76,22 @@ p {
   margin: auto;
 }
 
+a {
+  text-decoration: none;
+  color: var(--sub-color);
+}
+
+
+nav a {
+  text-decoration: none;
+  color: var(--sub-text-color);
+}
+
+a:hover {
+  color: #e28c40;
+  transition: 0.3s ease-in;
+}
+
 blockquote {
   color: var(--sub-text-color);
   font-style: italic;
@@ -160,32 +176,38 @@ a {
   margin-bottom: 0.8rem;
 }
 
-.bgAbout1 {
-  background-image: url("../public/img/about/hex1.png");
+footer {
+  color: var(--sub-text-color);
+  font-weight: 300;
+  letter-spacing: 8px;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
 }
 
-.bgAbout2 {
-  background-image: url("../public/img/about/hex2.png");
+footer ul {
+  display: flex;
+  align-items: center;
 }
 
-.bgAbout3 {
-  background-image: url("../public/img/about/hex3.png");
+footer .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--sub-text-color);
+  margin: 1.5rem;
 }
 
-.bgAbout4 {
-  background-image: url("../public/img/about/hex4.png");
-}
-
-.bgAbout5 {
-  background-image: url("../public/img/about/hex5.png");
-}
-
-.bgWork1 {
-  background-image: url("../public/img/work/mdb.png");
-}
-
-.bgWork2 {
-  background-image: url("../public/img/work/skn.png");
+.mail-icon {
+  background-color: white;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem auto;
+  border: 2px solid var(--sub-color);
 }
 
 ::-webkit-scrollbar {

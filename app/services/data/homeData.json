@@ -33,7 +33,13 @@
     "privately": {
       "title": "PRIVATELY?",
       "text": "Mainly, I love British football, exploring marvelous UX, Tarantino movies, Breaking Bad and Dire Straits!",
-      "data": []
+      "data": [
+        { "bgHex": "/img/about/hex1.png", "bgSquare": "" },
+        { "bgHex": "/img/about/hex2.png", "bgSquare": "" },
+        { "bgHex": "/img/about/hex3.png", "bgSquare": "" },
+        { "bgHex": "/img/about/hex4.png", "bgSquare": "" },
+        { "bgHex": "/img/about/hex5.png", "bgSquare": "" }
+      ]
     }
   },
   "work": {
@@ -41,8 +47,16 @@
       "title": "PROFESSIONAL EXPERIENCE?",
       "text": "Even before graduation, I took a full-time job at MDBootstrap. There I actively participate in the development of the React UI KIT, by creating components and unit tests, releasing the new versions, and respond to customer problems on the forum (similar to Stack Overflow). For some time I also take part in creating projects for clients, not connected with the UI KIT.",
       "data": [
-        { "link": "www.", "bg": "test" },
-        { "link": "www.", "bg": "test" }
+        {
+          "bgHex": "/img/work/mdb.png",
+          "bgSquare": "",
+          "link": "https://mdbootstrap.com/"
+        },
+        {
+          "bgHex": "/img/work/skn.png",
+          "bgSquare": "",
+          "link": "https://www.facebook.com/SKNdialog/"
+        }
       ]
     },
     "quotes": {
@@ -84,22 +98,22 @@
         {
           "title": "React",
           "about": "test sign",
-          "img": "/img/tech/react-icon.svg"
+          "img": "/img/work/react-icon.svg"
         },
         {
           "title": "Redux",
           "about": "test sign",
-          "img": "/img/tech/redux-icon.svg"
+          "img": "/img/work/redux-icon.svg"
         },
         {
           "title": "Node.js",
           "about": "test sign",
-          "img": "/img/tech/node-icon.svg"
+          "img": "/img/work/node-icon.svg"
         },
         {
           "title": "TypeScript",
           "about": "test sign",
-          "img": "/img/tech/ts-icon.svg"
+          "img": "/img/work/ts-icon.svg"
         }
       ]
     }
@@ -119,5 +133,9 @@
         "period": "Sep 2021 - now"
       }
     ]
+  },
+  "contact": {
+    "title": "Send me a message",
+    "text": "Interested in me? Text me:"
   }
 }

@@ -22,7 +22,7 @@ const useAnimatedAbout = () => {
 
     const animationOptions = {
       textContent: 0,
-      duration: 2,
+      duration: 3,
       snap: { textContent: 0.1 },
     };
 
