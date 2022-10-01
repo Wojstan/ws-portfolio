@@ -1,7 +1,11 @@
-import { HomeData } from "@template/HomePage/home";
-import Layout from "@layout/Layout";
-import HomePage from "@template/HomePage/HomePage";
 import { getHomeData } from "services/api-services";
+import { NextPage } from "next";
+import { HomeInterface } from "interfaces/HomeInterface";
+import TitleSection from "@containers/TitleSection/TitleSection";
+import AboutSection from "@containers/AboutSection/AboutSection";
+import WorkSection from "@containers/WorkSection/WorkSection";
+import EducationSection from "@containers/EducationSection/EducationSection";
+import ContactSection from "@containers/ContactSection/ContactSection";
 
 export function getStaticProps() {
   const homeData = getHomeData();
@@ -13,11 +17,21 @@ export function getStaticProps() {
   };
 }
 
-const Home = ({ data }: HomeData) => {
+const Home: NextPage<HomeInterface> = ({ data }) => {
+  const { title, about, work, education, contact } = data;
+
   return (
-    <Layout footer>
-      <HomePage data={data} />
-    </Layout>
+    <div className="main-layout">
+      <TitleSection data={title} />
+
+      <AboutSection data={about} />
+
+      <WorkSection data={work} />
+
+      <EducationSection data={education} />
+
+      <ContactSection data={contact} />
+    </div>
   );
 };
 

@@ -1,63 +1,127 @@
 {
+  "title": {
+    "text": "Constantly growing, 23 years old, an ambitious web developer from Warsaw. Absolutely passionate about frontend, creating beautiful layouts, and modern software."
+  },
   "about": {
-    "info1": [
-      {
-        "quote": "WHO AM I?",
-        "text": "Constantly growing, 23 years old, an ambitious web developer from Warsaw. Absolutely passionate about frontend, creating beautiful layouts, and modern software."
-      },
-      {
-        "quote": "HOW I WORK?",
-        "text": "I work well in groups and keep my code clean and simple. Always looking to improve my skills and learn new things."
-      }
-    ],
-    "info2": [
-      {
-        "quote": "MY EXPERIENCE?",
-        "text": "I have more than one-year professional experience working with JavaScript, React, TypeScript, Git. I am also familiar with the concept of the REST API."
-      },
-      {
-        "quote": "PRIVATELY?",
-        "text": "Mainly, I love British football, exploring marvelous UX, Tarantino movies, Breaking Bad and Dire Straits!"
-      }
-    ]
+    "work": {
+      "title": "HOW I WORK?",
+      "text": "I work well in groups and keep my code clean and simple. Always looking to improve my skills and learn new things. I have more than one-year professional experience working with JavaScript, React, TypeScript, Git. I am also familiar with the concept of the REST API.",
+      "data": [
+        {
+          "value": 2,
+          "prefix": "+",
+          "postfix": "Y",
+          "title": "PROFESSIONAL EXP",
+          "describe": "test"
+        },
+        {
+          "value": 24,
+          "prefix": "+",
+          "postfix": "Y",
+          "title": "PROFESSIONAL EXP",
+          "describe": "test"
+        },
+        {
+          "value": 1.5,
+          "prefix": "+",
+          "postfix": "Y",
+          "title": "PROFESSIONAL EXP",
+          "describe": "test"
+        }
+      ]
+    },
+    "privately": {
+      "title": "PRIVATELY?",
+      "text": "Mainly, I love British football, exploring marvelous UX, Tarantino movies, Breaking Bad and Dire Straits!",
+      "data": [
+        { "bgHex": "/img/about/hex1.png", "bgSquare": "" },
+        { "bgHex": "/img/about/hex2.png", "bgSquare": "" },
+        { "bgHex": "/img/about/hex3.png", "bgSquare": "" },
+        { "bgHex": "/img/about/hex4.png", "bgSquare": "" },
+        { "bgHex": "/img/about/hex5.png", "bgSquare": "" }
+      ]
+    }
   },
-  "projects": {
-    "info": [
-      {
-        "quote": "WHAT PROJECTS?",
-        "text": "A few projects I develop during my free time. Each one was coded with the idea of learning something new. Click one of the buttons below to see more!"
-      }
-    ],
-    "links": [
-      {
-        "id": 1,
-        "href": "bgPr2"
-      },
-      {
-        "id": 2,
-        "href": "bgPr4"
-      }
-    ]
+  "work": {
+    "experience": {
+      "title": "PROFESSIONAL EXPERIENCE?",
+      "text": "Even before graduation, I took a full-time job at MDBootstrap. There I actively participate in the development of the React UI KIT, by creating components and unit tests, releasing the new versions, and respond to customer problems on the forum (similar to Stack Overflow). For some time I also take part in creating projects for clients, not connected with the UI KIT.",
+      "data": [
+        {
+          "bgHex": "/img/work/mdb.png",
+          "bgSquare": "",
+          "link": "https://mdbootstrap.com/"
+        },
+        {
+          "bgHex": "/img/work/skn.png",
+          "bgSquare": "",
+          "link": "https://www.facebook.com/SKNdialog/"
+        }
+      ]
+    },
+    "quotes": {
+      "title": "OTHERS ABOUT ME?",
+      "text": "",
+      "data": [
+        {
+          "quote": "“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis pras. Always happy and chilled and making tosts for other people!”",
+          "about": "MDB Frontend Teamleader",
+          "author": "MIKOLAJ SMOLENSKI"
+        },
+        {
+          "quote": "“Kurczaker bestasdjiashfi jfioa jshifahs ifhasi fhaisuh fiuashiah siuhas iu asfas fasf asf asf f asfa sf asf fas fa as as asf asf as”",
+          "about": "TBRED",
+          "author": "KEVIN KOSKELA"
+        },
+        {
+          "quote": "“ I'm trying to determine if an element is visible on screen. In order to to this, I'm trying to find the element's vertical position using offsetTop”",
+          "about": "TYRKA",
+          "author": "ABOUT BENAZER"
+        }
+      ]
+    },
+    "timeline": {
+      "title": "TIMELINE?",
+      "text": "test timeline",
+      "data": [
+        {
+          "title": "Web Developer",
+          "place": "MDBootstrap",
+          "period": "Jan 2021 - now"
+        }
+      ]
+    },
+    "techstack": {
+      "title": "MAIN TECHSTACK?",
+      "text": "I use technologies such as React, Redux (Toolkit & RTK Query), TypeScript, Git, Jest, HTML & CSS/SCSS at work every day. I had also the opportunity to come across technologies like Next, Node and Wordpress.",
+      "data": [
+        {
+          "title": "React",
+          "about": "test sign",
+          "img": "/img/work/react-icon.svg"
+        },
+        {
+          "title": "Redux",
+          "about": "test sign",
+          "img": "/img/work/redux-icon.svg"
+        },
+        {
+          "title": "Node.js",
+          "about": "test sign",
+          "img": "/img/work/node-icon.svg"
+        },
+        {
+          "title": "TypeScript",
+          "about": "test sign",
+          "img": "/img/work/ts-icon.svg"
+        }
+      ]
+    }
   },
-  "qualification": {
-    "info": [
-      {
-        "quote": "EXPERIENCE?",
-        "text": "Even before graduation, I took a full-time job at MDBootstrap. There I actively participate in the development of the React UI KIT, by creating components and unit tests, releasing the new versions, and respond to customer problems on the forum (similar to Stack Overflow). For some time I also take part in creating projects for clients, not connected with the UI KIT."
-      },
-      {
-        "quote": "EDUCATION?",
-        "text": "From 2017 to 2021 I was a student at Warsaw Military University of Technology (Computer Science). Currently, I combine work with part-time studies at Warsaw University of Technology (Computer Science)."
-      }
-    ],
-    "experience": [
-      {
-        "title": "Web Developer",
-        "place": "MDBootstrap",
-        "period": "Jan 2021 - now"
-      }
-    ],
-    "education": [
+  "education": {
+    "title": "WHERE I STUDIED?",
+    "text": "From 2017 to 2021 I was a student at Warsaw Military University of Technology (Computer Science). Currently, I combine work with part-time studies at Warsaw University of Technology (Computer Science).",
+    "data": [
       {
         "title": "IT - Bachelor's degree",
         "place": "Military University of Technology",
@@ -70,38 +134,8 @@
       }
     ]
   },
-  "techstack": {
-    "info": [
-      {
-        "quote": "COMMERCIAL USE?",
-        "text": "I use technologies such as React, TypeScript, Git, Jest, HTML & CSS/SCSS at work every day. I had also the opportunity to come across technologies like Next, Node and Wordpress."
-      },
-      {
-        "quote": "NON-COMMERCIAL?",
-        "text": "I had a chance to use Redux several times, both classic and Redux Toolkit, also using RTK Query. I have basic skills in using Vue and GSAP (these 2 are my main targets recently)."
-      }
-    ],
-    "commercial": [
-      {
-        "name": "React",
-        "since": "2021-03-14",
-        "img": "/img/tech/react-icon.svg"
-      },
-      {
-        "name": "Next",
-        "since": "2021-08-22",
-        "img": "/img/tech/next-icon.svg"
-      },
-      {
-        "name": "TypeScript",
-        "since": "2021-03-14",
-        "img": "/img/tech/ts-icon.svg"
-      },
-      {
-        "name": "Git",
-        "since": "2021-01-10",
-        "img": "/img/tech/git-icon.svg"
-      }
-    ]
+  "contact": {
+    "title": "Send me a message",
+    "text": "Interested in me? Text me:"
   }
 }

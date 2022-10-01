@@ -2,14 +2,25 @@
   "compilerOptions": {
     "baseUrl": "app",
     "paths": {
-      "@element/*": ["components/elements/*"],
-      "@layout/*": ["components/layouts/*"],
-      "@module/*": ["components/modules/*"],
-      "@template/*": ["components/templates/*"],
-      "@helpers/*": ["helpers/*"]
+      "@components/*": [
+        "components/*"
+      ],
+      "@containers/*": [
+        "containers/*"
+      ],
+      "@interfaces/*": [
+        "interfaces/*"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ]
     },
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -20,8 +31,15 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

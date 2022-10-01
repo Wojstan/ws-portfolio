@@ -1,0 +1,24 @@
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh;
+}
+
+.list a {
+  text-transform: uppercase;
+}
+
+.list li {
+  width: 11rem;
+  border-bottom: 2px solid #898989;
+  margin: 0 1.5rem;
+  padding-bottom: 0.5rem;
+  letter-spacing: 5px;
+}
+
+.list li:hover {
+  border-bottom: 2px solid #e28c40;
+  transition: 0.2s ease-in;
+}
