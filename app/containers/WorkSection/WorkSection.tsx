@@ -71,7 +71,7 @@ const WorkSection: FC<WorkProps> = ({ data }) => {
           {techstack.data.map((item, i) => (
             <StatBlock
               key={i}
-              ref={techRefs.at(i)}
+              ref={techRefs[i]}
               content={<img src={item.img} alt="" />}
               title={item.title}
               describe={item.about}

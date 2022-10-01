@@ -21,7 +21,7 @@ const AboutSection: FC<AboutProps> = ({ data }) => {
           {work.data.map((item, i) => (
             <StatBlock
               key={i}
-              ref={statRefs.at(i)}
+              ref={statRefs[i]}
               value={item.value}
               prefix={item.prefix}
               postfix={item.postfix}
