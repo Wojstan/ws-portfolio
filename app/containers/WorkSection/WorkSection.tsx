@@ -40,17 +40,7 @@ const WorkSection: FC<WorkProps> = ({ data }) => {
         </div>
       </BlockSection>
 
-      <BlockSection title={quotes.title} text={quotes.text} mb>
-        <div
-          ref={carouselRef}
-          className="pb-final"
-          style={{ maxWidth: "1050px", margin: "auto" }}
-        >
-          <Carousel data={quotes.data} />
-        </div>
-      </BlockSection>
-
-      <BlockSection title={timeline.title} text={techstack.text} mb>
+      <BlockSection title={timeline.title} text={timeline.text} mb>
         <div ref={timelineRef} className="pb-final">
           <Timeline>
             {timeline.data.map((item, i) => (

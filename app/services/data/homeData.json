@@ -1,6 +1,6 @@
 {
   "title": {
-    "text": "Constantly growing, 23 years old, an ambitious web developer from Warsaw. Absolutely passionate about frontend, creating beautiful layouts, and modern software."
+    "text": "Constantly growing, 24 years old, ambitious web developer based in Warsaw. Absolutely passionate about frontend, React enthusiast. Already experienced, looking forward to challenges and expanding qualifications."
   },
   "about": {
     "work": {
@@ -12,21 +12,19 @@
           "prefix": "+",
           "postfix": "Y",
           "title": "PROFESSIONAL EXP",
-          "describe": "test"
+          "describe": "I had an opportunity to gain around 2 years of professional experience."
         },
         {
           "value": 24,
-          "prefix": "+",
-          "postfix": "Y",
-          "title": "PROFESSIONAL EXP",
-          "describe": "test"
+          "title": "YEARS OLD",
+          "describe": "A lot of desire and strength for further development."
         },
         {
           "value": 1.5,
           "prefix": "+",
           "postfix": "Y",
-          "title": "PROFESSIONAL EXP",
-          "describe": "test"
+          "title": "REACT EXP",
+          "describe": "I am an absoulte React enthusiast, already experienced."
         }
       ]
     },
@@ -34,10 +32,22 @@
       "title": "PRIVATELY?",
       "text": "Mainly, I love British football, exploring marvelous UX, Tarantino movies, Breaking Bad and Dire Straits!",
       "data": [
-        { "bgHex": "/img/about/hex1.png", "bgSquare": "/img/about/square1.png" },
-        { "bgHex": "/img/about/hex2.png", "bgSquare": "/img/about/square2.png" },
-        { "bgHex": "/img/about/hex3.png", "bgSquare": "/img/about/square3.png" },
-        { "bgHex": "/img/about/hex4.png", "bgSquare": "/img/about/square4.png" },
+        {
+          "bgHex": "/img/about/hex1.png",
+          "bgSquare": "/img/about/square1.png"
+        },
+        {
+          "bgHex": "/img/about/hex2.png",
+          "bgSquare": "/img/about/square2.png"
+        },
+        {
+          "bgHex": "/img/about/hex3.png",
+          "bgSquare": "/img/about/square3.png"
+        },
+        {
+          "bgHex": "/img/about/hex4.png",
+          "bgSquare": "/img/about/square4.png"
+        },
         { "bgHex": "/img/about/hex5.png", "bgSquare": "/img/about/square5.png" }
       ]
     }
@@ -60,29 +70,29 @@
       ]
     },
     "quotes": {
-      "title": "OTHERS ABOUT ME?",
+      "title": "OTHERS ABOUT MY WORK?",
       "text": "",
       "data": [
         {
-          "quote": "“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis pras. Always happy and chilled and making tosts for other people!”",
-          "about": "MDB Frontend Teamleader",
-          "author": "MIKOLAJ SMOLENSKI"
+          "quote": "“”",
+          "about": "",
+          "author": ""
         },
         {
-          "quote": "“Kurczaker bestasdjiashfi jfioa jshifahs ifhasi fhaisuh fiuashiah siuhas iu asfas fasf asf asf f asfa sf asf fas fa as as asf asf as”",
-          "about": "TBRED",
-          "author": "KEVIN KOSKELA"
+          "quote": "“”",
+          "about": "",
+          "author": ""
         },
         {
-          "quote": "“ I'm trying to determine if an element is visible on screen. In order to to this, I'm trying to find the element's vertical position using offsetTop”",
-          "about": "TYRKA",
-          "author": "ABOUT BENAZER"
+          "quote": "“”",
+          "about": "",
+          "author": ""
         }
       ]
     },
     "timeline": {
       "title": "TIMELINE?",
-      "text": "test timeline",
+      "text": "How did my employment looked like over the past few years.",
       "data": [
         {
           "title": "Web Developer",
@@ -93,26 +103,26 @@
     },
     "techstack": {
       "title": "MAIN TECHSTACK?",
-      "text": "I use technologies such as React, Redux (Toolkit & RTK Query), TypeScript, Git, Jest, HTML & CSS/SCSS at work every day. I had also the opportunity to come across technologies like Next, Node and Wordpress.",
+      "text": "I use technologies such as React, Redux (Toolkit & RTK Query), TypeScript, Git, Jest, HTML & CSS/SCSS at work every day. I also had the opportunity to come across technologies like Next, Node and Wordpress.",
       "data": [
         {
           "title": "React",
-          "about": "test sign",
+          "about": "Main technology, constant contact.",
           "img": "/img/work/react-icon.svg"
         },
         {
-          "title": "Redux",
-          "about": "test sign",
+          "title": "Redux (Toolkit & RTK Query)",
+          "about": "Repeatedly working on projects using this technology.",
           "img": "/img/work/redux-icon.svg"
         },
         {
           "title": "Node.js",
-          "about": "test sign",
+          "about": "Several contacts with the backend.",
           "img": "/img/work/node-icon.svg"
         },
         {
           "title": "TypeScript",
-          "about": "test sign",
+          "about": "If I create something in React, then only with TS!",
           "img": "/img/work/ts-icon.svg"
         }
       ]
@@ -136,6 +146,6 @@
   },
   "contact": {
     "title": "Send me a message",
-    "text": "Interested in me? Text me:"
+    "text": "Interested in working together? Contact me!"
   }
 }
