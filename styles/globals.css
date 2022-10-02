@@ -243,6 +243,15 @@ footer .dot {
   background: var(--main-title-color);
 }
 
+.main-img {
+  margin-top: 6vh;
+  margin-bottom: 3vh;
+}
+
+.main-img img {
+  height: 100%;
+}
+
 @media screen and (max-width: 1590px) {
   html {
     font-size: 14px;
@@ -265,7 +274,7 @@ footer .dot {
   h3 {
     font-size: 3.5vh;
   }
-  footer div{
+  footer div {
     margin-bottom: 2rem;
   }
 }
@@ -301,10 +310,13 @@ footer .dot {
   #title p {
     padding-bottom: 5rem;
   }
-  footer ul{
+  footer ul {
     flex-direction: column;
   }
-  article{
+  article {
     padding: 4vh 0;
+  }
+  .main-img {
+    height: 10rem;
   }
 }

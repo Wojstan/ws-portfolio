@@ -38,7 +38,7 @@ const useAnimatedWork = () => {
       duration: 0.5,
       opacity: 0,
       y: -50,
-      delay: 1,
+      delay: 0.5,
     };
 
     const tl = gsap.timeline({

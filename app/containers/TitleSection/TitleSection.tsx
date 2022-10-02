@@ -19,7 +19,9 @@ const TitleSection: FC<TitleProps> = ({ data, indexRef }) => {
       <header className="bg-light" style={{ position: "relative" }}>
         <Navbar indexRef={indexRef} />
 
-        <img src="/img/avatar.png" alt="avatar" />
+        <div className="main-img">
+          <img src="/img/avatar.png" alt="avatar" />
+        </div>
 
         <h1>Wojciech Staniszewski</h1>
 
