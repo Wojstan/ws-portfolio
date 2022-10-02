@@ -3,6 +3,7 @@
   visibility: hidden;
   transform: rotate(120deg);
   margin: 2rem 1rem;
+  display: inline-block;
 }
 
 .in1 {

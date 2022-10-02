@@ -38,12 +38,13 @@ const useAnimatedWork = () => {
       duration: 0.5,
       opacity: 0,
       y: -50,
+      delay: 1,
     };
 
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: hexRef.current,
-        start: "bottom bottom",
+        start: "top bottom",
       },
     });
 

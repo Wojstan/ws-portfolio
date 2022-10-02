@@ -1,5 +1,5 @@
 .stat {
-  padding: 2rem;
+  padding: 0 2rem;
   max-width: 320px;
   display: flex;
   align-items: center;
@@ -13,11 +13,11 @@
 
 .value {
   background-color: white;
-  height: 120px;
-  width: 120px;
+  height: 8rem;
+  width: 8rem;
   border-radius: 50%;
   font-family: "Odibee Sans", cursive;
-  font-size: 28px;
+  font-size: 2rem;
   color: #3a302d;
   display: flex;
   justify-content: center;

@@ -34,11 +34,11 @@
       "title": "PRIVATELY?",
       "text": "Mainly, I love British football, exploring marvelous UX, Tarantino movies, Breaking Bad and Dire Straits!",
       "data": [
-        { "bgHex": "/img/about/hex1.png", "bgSquare": "" },
-        { "bgHex": "/img/about/hex2.png", "bgSquare": "" },
-        { "bgHex": "/img/about/hex3.png", "bgSquare": "" },
-        { "bgHex": "/img/about/hex4.png", "bgSquare": "" },
-        { "bgHex": "/img/about/hex5.png", "bgSquare": "" }
+        { "bgHex": "/img/about/hex1.png", "bgSquare": "/img/about/square1.png" },
+        { "bgHex": "/img/about/hex2.png", "bgSquare": "/img/about/square2.png" },
+        { "bgHex": "/img/about/hex3.png", "bgSquare": "/img/about/square3.png" },
+        { "bgHex": "/img/about/hex4.png", "bgSquare": "/img/about/square4.png" },
+        { "bgHex": "/img/about/hex5.png", "bgSquare": "/img/about/square5.png" }
       ]
     }
   },
@@ -49,12 +49,12 @@
       "data": [
         {
           "bgHex": "/img/work/mdb.png",
-          "bgSquare": "",
+          "bgSquare": "/img/work/mdbSquare.png",
           "link": "https://mdbootstrap.com/"
         },
         {
           "bgHex": "/img/work/skn.png",
-          "bgSquare": "",
+          "bgSquare": "/img/work/sknSquare.png",
           "link": "https://www.facebook.com/SKNdialog/"
         }
       ]

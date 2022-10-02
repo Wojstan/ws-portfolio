@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FC, useEffect, useState } from "react";
+import { CSSProperties, FC, useEffect, useState } from "react";
 
 import styles from "./Hexagon.module.css";
 
@@ -9,6 +9,7 @@ type HexagonProps = {
   width: string;
   height: string;
   link?: string;
+  mt?: boolean;
 };
 
 const Hexagon: FC<HexagonProps> = ({
@@ -17,12 +18,13 @@ const Hexagon: FC<HexagonProps> = ({
   width,
   height,
   link,
+  mt,
 }) => {
   const [isNormalView, setNormalView] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setNormalView(window.innerWidth >= 992);
+      setNormalView(window.innerWidth >= 1200);
     };
 
     window.addEventListener("resize", handleResize);
@@ -41,7 +43,10 @@ const Hexagon: FC<HexagonProps> = ({
 
   if (isNormalView) {
     return (
-      <div className={styles.hexagon} style={{ width, height }}>
+      <div
+        className={styles.hexagon}
+        style={{ width, height, marginTop: mt ? "-100px" : undefined }}
+      >
         <div className={styles.in1}>
           {link ? (
             <a href={link} target="_blank" rel="noreferrer">

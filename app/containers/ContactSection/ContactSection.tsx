@@ -18,7 +18,7 @@ const ContactSection: FC<ContactProps> = ({ data }) => {
           <MailOutlined />
         </div>
         <p>Click the link below:</p>
-        <h3 style={{ paddingBottom: "10vh", fontSize: '2.6rem' }}>
+        <h3 style={{ paddingBottom: "10vh" }}>
           <a className="important" href="mailto: wpstaniszewski@gmail.com">
             <span ref={mailTextRef}></span>
             <span ref={cursorRef}>_</span>
@@ -26,7 +26,7 @@ const ContactSection: FC<ContactProps> = ({ data }) => {
         </h3>
       </BlockSection>
 
-      <footer className="bg-light flex-between">
+      <footer className="bg-light flex-between" >
         <div>WOJCIECH STANISZEWSKI &#169;</div>
         <ul>
           <li>

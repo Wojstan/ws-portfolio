@@ -23,7 +23,6 @@ const Carousel: FC<CarouselProps> = ({ data }) => {
     }, 500);
   };
 
-
   return (
     <>
       <ul style={{ position: "relative", minHeight: "290px" }}>
@@ -37,7 +36,7 @@ const Carousel: FC<CarouselProps> = ({ data }) => {
           />
         ))}
       </ul>
-      <ul className="flex-center">
+      <ul style={{ display: "flex", justifyContent: "center" }}>
         {data.map((item, i) => (
           <CarouselIndicator
             key={i}

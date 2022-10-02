@@ -7,8 +7,7 @@ const useAnimatedAbout = () => {
   const stat2Ref = useRef<HTMLDivElement>(null);
   const stat3Ref = useRef<HTMLDivElement>(null);
 
-  const hex1Ref = useRef<HTMLDivElement>(null);
-  const hex2Ref = useRef<HTMLDivElement>(null);
+  const hexRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -58,31 +57,22 @@ const useAnimatedAbout = () => {
       duration: 0.5,
       opacity: 0,
       y: -80,
+      delay: 1,
     };
 
     const tl1 = gsap.timeline({
       scrollTrigger: {
-        trigger: hex1Ref.current,
-        start: "bottom bottom",
+        trigger: hexRef.current,
+        start: "top bottom",
       },
     });
 
-    tl1.from(hex1Ref.current, fadeOptions);
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: hex2Ref.current,
-        start: "bottom bottom",
-      },
-    });
-
-    tl.from(hex2Ref.current, fadeOptions);
-  }, [hex1Ref]);
+    tl1.from(hexRef.current, fadeOptions);
+  }, [hexRef]);
 
   return {
     statRefs: [stat1Ref, stat2Ref, stat3Ref],
-    hex1Ref,
-    hex2Ref,
+    hexRef,
   };
 };
 
