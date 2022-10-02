@@ -1,12 +1,12 @@
 import styles from "./Navbar.module.css";
 
-type Props = {
-  homeRef?: { current: HTMLDivElement | null };
+type NavbarProps = {
+  indexRef?: { current: HTMLDivElement | null };
 };
 
-const Navbar = ({ homeRef }: Props) => {
+const Navbar = ({ indexRef }: NavbarProps) => {
   const scrollTo = (selector: string) => {
-    const homeElement = homeRef?.current;
+    const homeElement = indexRef?.current;
 
     const scrollElement = homeElement?.querySelector(selector);
 
@@ -15,21 +15,24 @@ const Navbar = ({ homeRef }: Props) => {
 
   return (
     <nav>
+      <div className={styles.mobile} style={{ border: "none" }}>
+        <img src="/img/logo.svg" alt="logo" />
+      </div>
       <ul className={styles.list}>
-        <li style={{textAlign: 'left'}}>
+        <li style={{ textAlign: "left" }}>
           <a onClick={() => scrollTo("#about")}>about</a>
         </li>
-        <li style={{textAlign: 'left'}}>
-          <a onClick={() => scrollTo("#projects")}>work</a>
+        <li style={{ textAlign: "left" }}>
+          <a onClick={() => scrollTo("#work")}>work</a>
         </li>
-        <li style={{ border: "none" }}>
+        <li className={styles.logo} style={{ border: "none" }}>
           <img src="/img/logo.svg" alt="logo" />
         </li>
-        <li style={{textAlign: 'right'}}>
-          <a onClick={() => scrollTo("#experience")}>education</a>
+        <li style={{ textAlign: "right" }}>
+          <a onClick={() => scrollTo("#education")}>education</a>
         </li>
-        <li style={{textAlign: 'right'}}>
-          <a onClick={() => scrollTo("#techstack")}>contact</a>
+        <li style={{ textAlign: "right" }}>
+          <a onClick={() => scrollTo("#contact")}>contact</a>
         </li>
       </ul>
     </nav>

@@ -10,7 +10,7 @@ type AboutProps = {
 };
 
 const AboutSection: FC<AboutProps> = ({ data }) => {
-  const { statRefs, hex1Ref, hex2Ref } = useAnimatedAbout();
+  const { statRefs, hexRef } = useAnimatedAbout();
 
   const { privately, work } = data;
 
@@ -33,38 +33,17 @@ const AboutSection: FC<AboutProps> = ({ data }) => {
       </BlockSection>
 
       <BlockSection title={privately.title} text={privately.text}>
-        <div ref={hex1Ref} className="flex-center mt-4">
-          {privately.data.map(
-            (hex, i) =>
-              i < 3 && (
-                <Hexagon
-                  key={i}
-                  width="305px"
-                  height="360px"
-                  bgHex={hex.bgHex}
-                  bgSquare={hex.bgSquare}
-                />
-              )
-          )}
-        </div>
-
-        <div
-          ref={hex2Ref}
-          className="flex-center pb-final"
-          style={{ marginTop: "-8rem" }}
-        >
-          {privately.data.map(
-            (hex, i) =>
-              i > 2 && (
-                <Hexagon
-                  key={i}
-                  width="305px"
-                  height="360px"
-                  bgHex={hex.bgHex}
-                  bgSquare={hex.bgSquare}
-                />
-              )
-          )}
+        <div ref={hexRef} className="hex-images pb-final">
+          {privately.data.map((hex, i) => (
+            <Hexagon
+              key={i}
+              width="305px"
+              height="360px"
+              bgHex={hex.bgHex}
+              bgSquare={hex.bgSquare}
+              mt={i > 2}
+            />
+          ))}
         </div>
       </BlockSection>
     </section>

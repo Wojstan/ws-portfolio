@@ -4,7 +4,13 @@
 
 .arrow {
   position: absolute;
-  bottom: 5%;
+  bottom: 60px;
   margin: 0 auto;
   font-size: 3vh;
+}
+
+@media screen and (max-width: 576px) {
+  .arrow {
+    bottom: 20px;
+  }
 }

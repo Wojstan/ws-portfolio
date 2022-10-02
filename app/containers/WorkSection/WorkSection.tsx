@@ -26,14 +26,14 @@ const WorkSection: FC<WorkProps> = ({ data }) => {
         text={experience.text}
         mb
       >
-        <div ref={hexRef} className="flex-center mt-4 pb-final">
+        <div ref={hexRef} className="mt-4 pb-final">
           {experience.data.map((item, i) => (
             <Hexagon
               key={i}
               width="208px"
               height="250px"
               bgHex={item.bgHex}
-              bgSquare={item.bgHex}
+              bgSquare={item.bgSquare}
               link={item.link}
             />
           ))}

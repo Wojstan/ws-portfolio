@@ -48,7 +48,7 @@ h3 {
 h4 {
   color: var(--sub-color);
   font-weight: 700;
-  font-size: 2.5vh;
+  font-size: 2.3vh;
   letter-spacing: 7px;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -96,7 +96,7 @@ blockquote {
   color: var(--sub-text-color);
   font-style: italic;
   font-size: 1.6rem;
-  line-height: 50px;
+  line-height: 3.5rem;
   margin-bottom: 3rem;
 }
 
@@ -165,6 +165,11 @@ a {
   justify-content: center;
 }
 
+.flex-center-image {
+  display: flex;
+  justify-content: center;
+}
+
 .anticon {
   color: var(--sub-text-color);
 }
@@ -180,9 +185,9 @@ a {
 footer {
   color: var(--sub-text-color);
   font-weight: 300;
-  letter-spacing: 8px;
+  letter-spacing: 0.6rem;
   font-size: 1.3rem;
-  padding: 1rem 2rem;
+  padding: 2rem 5rem;
 }
 
 footer ul {
@@ -195,13 +200,13 @@ footer .dot {
   height: 5px;
   border-radius: 50%;
   background-color: var(--sub-text-color);
-  margin: 1.5rem;
+  margin: 0.5rem 1.5rem;
 }
 
 .mail-icon {
   background-color: white;
-  height: 120px;
-  width: 120px;
+  height: 8rem;
+  width: 8rem;
   border-radius: 50%;
   font-size: 28px;
   display: flex;
@@ -209,6 +214,11 @@ footer .dot {
   align-items: center;
   margin: 2.5rem auto;
   border: 2px solid var(--sub-color);
+}
+
+.hex-images {
+  max-width: 1100px;
+  margin: auto;
 }
 
 ::-webkit-scrollbar {
@@ -239,42 +249,39 @@ footer .dot {
   }
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1200px) {
   .flex-between {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
+  .image-margin {
+    margin-top: 0;
+  }
+  h1 {
+    font-size: 5.4vh;
+  }
+  h3 {
+    font-size: 3.5vh;
+  }
+  footer div{
+    margin-bottom: 2rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
-  h1 {
+  .flex-center {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    font-size: 7.3rem;
-    margin-top: 11vh;
   }
-  h3 {
-    text-align: center;
-    font-size: 1.8rem;
+  section {
+    margin: 0;
+    margin-bottom: 2vh;
   }
-  article {
-    max-width: 100%;
-    margin-bottom: 6rem;
-  }
-  .bgPr1 {
-    background-image: url("../public/img/projects/square1.png");
-  }
-
-  .bgPr2 {
-    background-image: url("../public/img/projects/square2.png");
-  }
-
-  .bgPr4 {
-    background-image: url("../public/img/projects/square4.png");
-  }
-
-  .bgPr5 {
-    background-image: url("../public/img/projects/square5.png");
+  .bg-light {
+    padding: 2vh;
   }
 }
 
@@ -283,23 +290,21 @@ footer .dot {
     font-size: 12px;
   }
   h1 {
-    font-size: 6rem;
-    text-align: center;
-    margin-bottom: 1.6rem;
+    margin-bottom: 2vh;
   }
   h3 {
-    font-size: 1.6rem;
-    text-align: center;
+    font-size: 2.5vh;
   }
-  article {
-    margin-bottom: 3rem;
-    margin-top: 0rem;
+  #title {
+    height: auto;
   }
-
-  p {
-    margin-bottom: 4rem;
+  #title p {
+    padding-bottom: 5rem;
   }
-  .main-layout {
-    padding: 0;
+  footer ul{
+    flex-direction: column;
+  }
+  article{
+    padding: 4vh 0;
   }
 }
