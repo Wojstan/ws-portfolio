@@ -4,8 +4,8 @@
   },
   "about": {
     "work": {
-      "title": "HOW I WORK?",
-      "text": "I work well in groups and keep my code clean and simple. Always looking to improve my skills and learn new things. I have more than one-year professional experience working with JavaScript, React, TypeScript, Git. I am also familiar with the concept of the REST API.",
+      "title": "HOW DO I WORK?",
+      "text": "I work well in groups and keep my code clean and simple. I pay attention to order and take care of the details. I always try to do my job as simply and as well as possible. My primary interest is React and I'm constantly improving my skills at it.",
       "data": [
         {
           "value": 2,
@@ -29,8 +29,8 @@
       ]
     },
     "privately": {
-      "title": "PRIVATELY?",
-      "text": "Mainly, I love British football, exploring marvelous UX, Tarantino movies, Breaking Bad and Dire Straits!",
+      "title": "BESIDES WORK?",
+      "text": "I love traveling and taking pictures of beautiful places. I willingly participate in social gatherings. Music, movies, TV series, books - I'm happy to talk about any of these things. The next very important thing of my life is British football. I'm also interested in investments.",
       "data": [
         {
           "bgHex": "/img/about/hex1.png",
@@ -55,7 +55,7 @@
   "work": {
     "experience": {
       "title": "PROFESSIONAL EXPERIENCE?",
-      "text": "Even before graduation, I took a full-time job at MDBootstrap. There I actively participate in the development of the React UI KIT, by creating components and unit tests, releasing the new versions, and respond to customer problems on the forum (similar to Stack Overflow). For some time I also take part in creating projects for clients, not connected with the UI KIT.",
+      "text": "Even before graduation, I took a full-time job at MDBootstrap. There I actively participate in the development of the React UI KIT. For the last time I mainly worked on projects for clients, not connected with the UI KIT. It helped me to understand that creating web aplications is what I would most like to do.",
       "data": [
         {
           "bgHex": "/img/work/mdb.png",
@@ -92,7 +92,7 @@
     },
     "timeline": {
       "title": "TIMELINE?",
-      "text": "How did my employment looked like over the past few years.",
+      "text": "How had my employment looked like over the past few years.",
       "data": [
         {
           "title": "Web Developer",
