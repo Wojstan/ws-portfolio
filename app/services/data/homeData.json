@@ -55,7 +55,7 @@
   "work": {
     "experience": {
       "title": "PROFESSIONAL EXPERIENCE?",
-      "text": "Even before graduation, I took a full-time job at MDBootstrap. There I actively participate in the development of the React UI KIT. For the last time I mainly worked on projects for clients, not connected with the UI KIT. It helped me to understand that creating web aplications is what I would most like to do.",
+      "text": "Even before graduation, I took a full-time job at MDBootstrap. There I actively participate in the development of the React UI KIT. For the last time I mainly worked on projects for clients, not connected with the UI KIT. It helped me to understand that creating web aplications is what I would most like to do. I am always happy to take any opportunity to make something interesting, even besides my job. Recently, I was developing a website using next.js for the research circle of the University of Warsaw.",
       "data": [
         {
           "bgHex": "/img/work/mdb.png",
@@ -65,7 +65,7 @@
         {
           "bgHex": "/img/work/skn.png",
           "bgSquare": "/img/work/sknSquare.png",
-          "link": "https://www.facebook.com/SKNdialog/"
+          "link": "https://www.dialogskn.pl/"
         }
       ]
     },
@@ -117,7 +117,7 @@
         },
         {
           "title": "Node.js",
-          "about": "Several contacts with the backend.",
+          "about": "Several contacts with the backend technology.",
           "img": "/img/work/node-icon.svg"
         },
         {
