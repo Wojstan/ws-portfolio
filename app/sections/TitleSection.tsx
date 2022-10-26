@@ -1,7 +1,6 @@
 import useAnimatedTitle from "@hooks/useAnimatedTitle";
 import { FC } from "react";
 import { ArrowDownOutlined } from "@ant-design/icons";
-import styles from "./TitleSection.module.css";
 import Navbar from "@components/Navbar/Navbar";
 import { TitleType } from "@interfaces/HomeInterface";
 
@@ -15,7 +14,7 @@ const TitleSection: FC<TitleProps> = ({ data, indexRef }) => {
     useAnimatedTitle();
 
   return (
-    <section className={styles.title} id="title">
+    <section id="title">
       <header className="bg-light" style={{ position: "relative" }}>
         <Navbar indexRef={indexRef} />
 
@@ -35,7 +34,7 @@ const TitleSection: FC<TitleProps> = ({ data, indexRef }) => {
           <p ref={aboutTextRef}>{data.text}</p>
         </article>
 
-        <ArrowDownOutlined className={styles.arrow} ref={arrowRef} />
+        <ArrowDownOutlined className="arrow" ref={arrowRef} />
       </header>
     </section>
   );

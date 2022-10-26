@@ -1,16 +1,16 @@
 import { getHomeData } from "services/api-services";
-import { NextPage } from "next";
+import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
 import { HomeInterface } from "interfaces/HomeInterface";
-import TitleSection from "@containers/TitleSection/TitleSection";
-import AboutSection from "@containers/AboutSection/AboutSection";
-import WorkSection from "@containers/WorkSection/WorkSection";
-import EducationSection from "@containers/EducationSection/EducationSection";
-import ContactSection from "@containers/ContactSection/ContactSection";
+import TitleSection from "sections/TitleSection";
+import AboutSection from "sections/AboutSection";
+import WorkSection from "sections/WorkSection";
+import EducationSection from "sections/EducationSection";
+import ContactSection from "sections/ContactSection";
 
 import { useRef } from "react";
 import ScrollTop from "@components/ScrollTop/ScrollTop";
 
-export function getStaticProps() {
+const getStaticProps: GetStaticProps<{ data: HomeInterface }> = () => {
   const homeData = getHomeData();
 
   return {
@@ -18,9 +18,11 @@ export function getStaticProps() {
       data: homeData,
     },
   };
-}
+};
 
-const Home: NextPage<HomeInterface> = ({ data }) => {
+const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  data,
+}) => {
   const { title, about, work, education, contact } = data;
   const indexRef = useRef(null);
 
@@ -35,7 +37,7 @@ const Home: NextPage<HomeInterface> = ({ data }) => {
       <EducationSection data={education} />
 
       <ContactSection data={contact} />
-      
+
       <ScrollTop />
     </div>
   );

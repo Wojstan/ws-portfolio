@@ -71,11 +71,9 @@ export type EducationType = Heading & {
 export type ContactType = Heading;
 
 export interface HomeInterface {
-  data: {
-    title: Heading;
-    about: AboutType;
-    work: WorkType;
-    education: EducationType;
-    contact: ContactType;
-  };
+  title: Heading;
+  about: AboutType;
+  work: WorkType;
+  education: EducationType;
+  contact: ContactType;
 }

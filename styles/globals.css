@@ -29,7 +29,7 @@ h5 {
 
 h1 {
   font-weight: 700;
-  font-size: 7.5vh;
+  font-size: 6.5vh;
 }
 
 h2 {
@@ -42,7 +42,7 @@ h2 {
 h3 {
   font-family: "Source Code Pro", monospace;
   color: var(--sub-color);
-  font-size: 5vh;
+  font-size: 4vh;
 }
 
 h4 {
@@ -70,7 +70,7 @@ h6 {
 p {
   font-weight: 300;
   color: var(--sub-text-color);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 2.5rem;
   letter-spacing: 1px;
   margin: auto;
@@ -79,12 +79,6 @@ p {
 a {
   text-decoration: none;
   color: var(--sub-color);
-}
-
-nav a,
-footer a {
-  text-decoration: none;
-  color: var(--sub-text-color);
 }
 
 a:hover {
@@ -125,7 +119,7 @@ article {
 }
 
 small {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #b0b0b0;
   font-weight: 300;
   letter-spacing: 2px;
@@ -186,8 +180,18 @@ footer {
   color: var(--sub-text-color);
   font-weight: 300;
   letter-spacing: 0.6rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding: 2rem 5rem;
+}
+
+nav a,
+footer a {
+  text-decoration: none;
+  color: var(--sub-text-color);
+}
+
+footer a {
+  font-size: 1rem;
 }
 
 footer ul {
@@ -250,6 +254,19 @@ footer .dot {
 
 .main-img img {
   height: 100%;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 60px;
+  margin: 0 auto;
+  font-size: 3vh;
+}
+
+@media screen and (max-width: 576px) {
+  .arrow {
+    bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 1590px) {
