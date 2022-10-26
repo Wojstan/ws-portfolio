@@ -10,7 +10,7 @@ import ContactSection from "sections/ContactSection";
 import { useRef } from "react";
 import ScrollTop from "@components/ScrollTop/ScrollTop";
 
-const getStaticProps: GetStaticProps<{ data: HomeInterface }> = () => {
+export const getStaticProps: GetStaticProps<{ data: HomeInterface }> = () => {
   const homeData = getHomeData();
 
   return {
