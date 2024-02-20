@@ -5,7 +5,7 @@ export const aboutMe = {
   text: (
     <>
       I am a software engineer focused on getting the things done and doing it right. Currently, I am employed at{' '}
-      <Important>Archblock Poland</Important> (since almost <Important>1.5 year</Important>) where I tackle significant
+      <Important>Archblock Poland</Important> (for almost <Important>1.5 year</Important>) where I tackle significant
       blockchain challenges. I do both frontend and backend stuff, just care about typing and writing tests.
     </>
   ),
@@ -24,7 +24,7 @@ export const someSeriousStuff = {
       <Important>Typescript, Docker, Postgres, Heroku, Prisma, Retool</Important> and <Important>Mocha</Important>.
     </>,
     <>
-      Currently I participate in the development of <Important>Archblock Stablecoins</Important> and work mostly with{' '}
+      Currently I take part in the development of <Important>Archblock Stablecoins</Important> and work mostly with{' '}
       <Important>React, Typescript, GraphQl, Python, Docker, gRPC, pytest, web3, sentry, SQLAlchemy, Tanstack </Important> and many
       more.
     </>,
