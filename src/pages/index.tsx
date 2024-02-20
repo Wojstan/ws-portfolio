@@ -13,24 +13,20 @@ export default function Home() {
       </Head>
 
       <Section light>
-        <div className="flex justify-center h-40 mb-16">
+        <div className="flex sm:justify-center h-24 sm:h-40 mb-8 sm:mb-16">
           <img className="rounded-full" src="/img/avatar.png" alt="avatar" />
         </div>
 
-        <h1 className="text-5xl font-black mb-4 text-main">{welcome.title}</h1>
+        <h1 className="text-3xl sm:text-5xl font-black mb-2 sm:mb-4 text-main">{welcome.title}</h1>
 
         <AnimatedDeveloper />
 
         <Paragraph>{welcome.text}</Paragraph>
 
         <NavMenu />
-
-        <div className="text-sm text-center w-full text-gray-300 font-light tracking-widest absolute bottom-3 right-0">
-          Wojciech Staniszewski ©
-        </div>
       </Section>
 
-      <Section className="relative" id="about">
+      <Section className="p-4 sm:p-0" id="about">
         <div className="mb-16">
           <Subtitle>{aboutMe.title}</Subtitle>
           <Paragraph>{aboutMe.text}</Paragraph>
@@ -39,13 +35,17 @@ export default function Home() {
         <Subtitle>{someSeriousStuff.title}</Subtitle>
         <Paragraph>{someSeriousStuff.text}</Paragraph>
 
-        <ul className="list-disc max-w-screen-lg m-auto mt-6">
+        <ul className="list-disc max-w-screen-lg m-auto mt-6 p-4 sm:p-0">
           {someSeriousStuff.stuff.map((point, index) => (
-            <li key={index} className="text-light text-justify mb-3">
+            <li key={index} className="text-light text-justify mb-4">
               <Paragraph>{point}</Paragraph>
             </li>
           ))}
         </ul>
+
+        <div className="text-sm text-center w-full text-gray-300 font-light tracking-widest sm:absolute bottom-3 right-0">
+          Wojciech Staniszewski ©
+        </div>
       </Section>
     </main>
   )

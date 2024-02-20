@@ -11,7 +11,7 @@ export function Section({ id, children, light, className = '' }: Props) {
   return (
     <section
       id={id}
-      className={`${className} h-screen ${light && 'bg-[#f5f5f5]'} flex items-center justify-center text-center `}
+      className={`${className} sm:h-screen ${light && 'sm:bg-[#f5f5f5]'} flex items-center justify-center text-justify sm:text-center py-8`}
     >
       <div className="max-w-screen-xl m-auto">{children}</div>
     </section>
