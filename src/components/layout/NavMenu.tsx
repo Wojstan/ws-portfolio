@@ -19,8 +19,8 @@ const menu = [
 
 export function NavMenu() {
   return (
-    <nav className=" text-light mt-4">
-      <ul className="flex justify-center items-center gap-4">
+    <nav className="text-light mt-4">
+      <ul className="flex sm:justify-center items-center gap-2 sm:gap-4">
         {menu.map(({ link, icon, external }) => (
           <li
             key={link}

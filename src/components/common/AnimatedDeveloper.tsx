@@ -24,7 +24,7 @@ export function AnimatedDeveloper() {
 
   return (
     <>
-      <h3 className="text-sub text-2xl mb-10">
+      <h3 className="text-sub mb-4 sm:text-2xl sm:mb-10">
         {'<'}
         <span ref={registerTextRef}></span>
         <span ref={cursorRef}>_</span>
